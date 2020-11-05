@@ -7,27 +7,20 @@ package Controllers;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
-
-import DBConnection.DBHandler;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 /**
@@ -58,14 +51,21 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void signInButtonAction(MouseEvent event) {
+    private void signInButtonAction(MouseEvent event) throws IOException {
         String username = txt_username.getText();
-        String password = txt_password.getText().toString();
+        String password = txt_password.getText();
         if (password.equals("") || username.equals("")) {
             JOptionPane.showMessageDialog(null, "Fields Required");
         } // admin auth
         else if (username.equals("admin") && password.equals("admin123")) {
-            JOptionPane.showMessageDialog(null, "Login");
+            btn_signIn.getScene().getWindow().hide();
+
+            Stage MenuCompo = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("/FXML/MenuComponent.fxml"));
+            Scene scene = new Scene(root);
+            MenuCompo.setScene(scene);
+            MenuCompo.show();
+            MenuCompo.setResizable(false);
         } else {
             JOptionPane.showMessageDialog(null, "Incorrect username or password");
         }
