@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controllers.New_StudentController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/javafx" fx:controller="Controllers.New_StudentController">
    <children>
       <Pane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #3626A7;" />
       <Label layoutX="514.0" layoutY="29.0" prefHeight="19.0" prefWidth="106.0" text="R E G I S T E R" textAlignment="CENTER" textFill="#3626a7">
