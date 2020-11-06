@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Update_StudentController">
+   <children>
+       <Pane layoutX="-15.0" layoutY="-15.0" prefHeight="523.0" prefWidth="552.0" style="-fx-background-color: #fbfbff;" />
+      <TextField fx:id="reg_txt_username" layoutX="49.0" layoutY="56.0" prefHeight="35.0" prefWidth="211.0" promptText="name">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_nsbmid" layoutX="49.0" layoutY="125.0" prefHeight="35.0" prefWidth="211.0" promptText="nsbm id">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_email" layoutX="49.0" layoutY="194.0" prefHeight="35.0" prefWidth="211.0" promptText="email">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_phnmb" layoutX="49.0" layoutY="264.0" prefHeight="35.0" prefWidth="211.0" promptText="phone number">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_nic" layoutX="49.0" layoutY="329.0" prefHeight="35.0" prefWidth="211.0" promptText="nic">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="49.0" layoutY="33.0" prefHeight="17.0" prefWidth="39.0" text="NAME" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="103.0" prefHeight="17.0" prefWidth="59.0" text="NSBM ID" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="173.0" prefHeight="17.0" prefWidth="59.0" text="EMAIL" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="240.0" prefHeight="17.0" prefWidth="86.0" text="PHONE NUMBER" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="305.0" prefHeight="17.0" prefWidth="59.0" text="NIC" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reg_txt_address" alignment="TOP_LEFT" layoutX="281.0" layoutY="55.0" prefHeight="106.0" prefWidth="211.0" promptText="address">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="281.0" layoutY="32.0" prefHeight="17.0" prefWidth="59.0" text="ADDRESS" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reg_txt_guardname" layoutX="281.0" layoutY="193.0" prefHeight="35.0" prefWidth="211.0" promptText="guardian">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="281.0" layoutY="170.0" prefHeight="17.0" prefWidth="106.0" text="GUARDIAN NAME" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reg_txt_guardtel" layoutX="282.0" layoutY="262.0" prefHeight="35.0" prefWidth="211.0" promptText="guardian phone">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="282.0" layoutY="239.0" prefHeight="17.0" prefWidth="106.0" text="GUARDIAN TEL" textFill="#0d0106">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <TableView editable="true" layoutX="546.0" layoutY="45.0" prefHeight="391.0" prefWidth="440.0">
+        <columns>
+          <TableColumn prefWidth="77.0" text="C1" />
+          <TableColumn prefWidth="73.0" text="C2" />
+        </columns>
+      </TableView>
+      
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
