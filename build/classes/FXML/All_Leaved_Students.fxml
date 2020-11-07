@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx" fx:controller="Controllers.All_Leaved_StudentsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <TableView fx:id="tableStudent" editable="true" layoutX="49.0" layoutY="141.0" prefHeight="391.0" prefWidth="893.0">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="35.0" text="ID" />
+                  <TableColumn fx:id="col_name" prefWidth="119.0" text="NAME" />
+                  <TableColumn fx:id="col_nsbmid" prefWidth="77.0" text="NSBM ID" />
+                  <TableColumn fx:id="col_email" prefWidth="119.0" text="EMAIL" />
+                  <TableColumn fx:id="col_phonenumber" prefWidth="126.0" text="PHONE NUMBER" />
+                  <TableColumn fx:id="col_nic" text="NIC" />
+                  <TableColumn fx:id="col_address" minWidth="0.0" prefWidth="91.0" text="ADDRESS" />
+                  <TableColumn fx:id="col_g_name" prefWidth="84.0" text="G_NAME" />
+                  <TableColumn fx:id="col_g_tel" prefWidth="81.0" text="G_TEL" />
+                  <TableColumn fx:id="col_l_date" prefWidth="81.0" text="L_DATE" />
+               </columns>
+            </TableView>
+            <Label layoutX="312.0" layoutY="43.0" prefHeight="47.0" prefWidth="455.0" text="ALL STUDENTS LEAVED" textFill="#3626a7">
+               <font>
+                  <Font name="Segoe UI Bold" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

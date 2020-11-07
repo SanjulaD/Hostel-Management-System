@@ -18,6 +18,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -64,6 +65,29 @@ public class Delete_StudentController implements Initializable {
     private Connection connection;
     private DBHandler handler;
     private PreparedStatement pst;
+    private String leavedID;
+    @FXML
+    private TextField reg_txt_guardname;
+    @FXML
+    private TextField reg_txt_guardtel;
+    @FXML
+    private TextField reg_txt_email;
+    @FXML
+    private TextField reg_txt_phnmb;
+    @FXML
+    private TextField reg_txt_address;
+    @FXML
+    private TableColumn<StudentDetails, String> col_email;
+    @FXML
+    private TableColumn<StudentDetails, String> col_phonenumber;
+    @FXML
+    private TableColumn<StudentDetails, String> col_address;
+    @FXML
+    private TableColumn<StudentDetails, String> col_g_name;
+    @FXML
+    private TableColumn<StudentDetails, String> col_g_tel;
+    @FXML
+    private DatePicker dateLeaved;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -73,29 +97,52 @@ public class Delete_StudentController implements Initializable {
 
     @FXML
     private void deleteStudentButtonAction(MouseEvent event) {
+        updateLeavedStudentDB();
+        
         String delete = "DELETE from register_students where id = ?";
         connection = handler.connectDB();
         try {
             pst = connection.prepareStatement(delete);
             pst.setString(1, reg_txt_id.getText());
+            leavedID = reg_txt_id.getText();
             pst.executeUpdate();
             JOptionPane.showMessageDialog(null, "Deleted Selected Student");
-            reg_txt_id.setText("");
-            reg_txt_username.setText("");
-            reg_txt_nsbmid.setText("");
-            reg_txt_nic.setText("");
-        
+            clearFields();
             autoRefresh();
-            
-            
+
         } catch (SQLException ex) {
             ex.printStackTrace();
+            JOptionPane.showMessageDialog(null, ex);
         }
     }
-    
-    private void autoRefresh()
-    {
-       connection = handler.connectDB();
+
+    private void updateLeavedStudentDB() {
+        String query = "INSERT INTO leaved_students (id,name,nsbmid,email,phonenumber,nic,address,guardname,guardtel,leave_date) VALUES(?,?,?,?,?,?,?,?,?,?)";
+        connection = handler.connectDB();
+        try {
+            pst = connection.prepareStatement(query);
+            pst.setString(1, reg_txt_id.getText());
+            pst.setString(2, reg_txt_username.getText());
+            pst.setString(3, reg_txt_nsbmid.getText());
+            pst.setString(4, reg_txt_email.getText());
+            pst.setString(5, reg_txt_phnmb.getText());
+            pst.setString(6, reg_txt_nic.getText());
+            pst.setString(7, reg_txt_address.getText());
+            pst.setString(8, reg_txt_guardname.getText());
+            pst.setString(9, reg_txt_guardtel.getText());
+            pst.setString(10, ((TextField)dateLeaved.getEditor()).getText());
+            pst.executeUpdate();
+
+            autoRefresh();
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(null, ex);
+        }
+    }
+
+    private void autoRefresh() {
+        connection = handler.connectDB();
         data = FXCollections.observableArrayList();
 
         try {
@@ -115,10 +162,15 @@ public class Delete_StudentController implements Initializable {
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_nsbmid.setCellValueFactory(new PropertyValueFactory<>("nsbmId"));
+        col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
+        col_phonenumber.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
         col_nic.setCellValueFactory(new PropertyValueFactory<>("nic"));
+        col_address.setCellValueFactory(new PropertyValueFactory<>("address"));
+        col_g_name.setCellValueFactory(new PropertyValueFactory<>("guardName"));
+        col_g_tel.setCellValueFactory(new PropertyValueFactory<>("guardTel"));
 
         tableStudent.setItems(null);
-        tableStudent.setItems(data); 
+        tableStudent.setItems(data);
     }
 
     @FXML
@@ -143,7 +195,12 @@ public class Delete_StudentController implements Initializable {
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_nsbmid.setCellValueFactory(new PropertyValueFactory<>("nsbmId"));
+        col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
+        col_phonenumber.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
         col_nic.setCellValueFactory(new PropertyValueFactory<>("nic"));
+        col_address.setCellValueFactory(new PropertyValueFactory<>("address"));
+        col_g_name.setCellValueFactory(new PropertyValueFactory<>("guardName"));
+        col_g_tel.setCellValueFactory(new PropertyValueFactory<>("guardTel"));
 
         tableStudent.setItems(null);
         tableStudent.setItems(data);
@@ -168,8 +225,25 @@ public class Delete_StudentController implements Initializable {
             reg_txt_id.setText(id);
             reg_txt_username.setText(name);
             reg_txt_nsbmid.setText(nsbmid);
+            reg_txt_email.setText(email);
+            reg_txt_phnmb.setText(phonenumber);
             reg_txt_nic.setText(nic);
+            reg_txt_address.setText(address);
+            reg_txt_guardname.setText(g_name);
+            reg_txt_guardtel.setText(g_tel);
         }
+    }
+
+    private void clearFields() {
+        reg_txt_username.setText("");
+        reg_txt_nsbmid.setText("");
+        reg_txt_email.setText("");
+        reg_txt_phnmb.setText("");
+        reg_txt_nic.setText("");
+        reg_txt_address.setText("");
+        reg_txt_guardname.setText("");
+        reg_txt_guardtel.setText("");
+        dateLeaved.setValue(null);
     }
 
 }

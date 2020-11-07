@@ -84,7 +84,7 @@ public class Update_StudentController implements Initializable {
     private Connection connection;
     private DBHandler handler;
     private PreparedStatement pst;
-    
+
     @FXML
     private TextField reg_txt_id;
     @FXML
@@ -95,10 +95,9 @@ public class Update_StudentController implements Initializable {
         // TODO
         handler = new DBHandler();
     }
-    
-    private void autoRefresh()
-    {
-       connection = handler.connectDB();
+
+    private void autoRefresh() {
+        connection = handler.connectDB();
         data = FXCollections.observableArrayList();
 
         try {
@@ -118,10 +117,15 @@ public class Update_StudentController implements Initializable {
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_nsbmid.setCellValueFactory(new PropertyValueFactory<>("nsbmId"));
+        col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
+        col_phonenumber.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
         col_nic.setCellValueFactory(new PropertyValueFactory<>("nic"));
+        col_address.setCellValueFactory(new PropertyValueFactory<>("address"));
+        col_g_name.setCellValueFactory(new PropertyValueFactory<>("guardName"));
+        col_g_tel.setCellValueFactory(new PropertyValueFactory<>("guardTel"));
 
         tableStudent.setItems(null);
-        tableStudent.setItems(data); 
+        tableStudent.setItems(data);
     }
 
     @FXML
@@ -186,7 +190,7 @@ public class Update_StudentController implements Initializable {
 
             while (rs.next()) {
                 // get string from db
-                data.add(new StudentDetails(rs.getString(1),rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9)));
+                data.add(new StudentDetails(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9)));
 
             }
         } catch (SQLException ex) {

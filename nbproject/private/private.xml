@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/All_Student_LivingController.java</file>
             <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Model/StudentDetails.java</file>
-            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/Update_StudentController.java</file>
+            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/Delete_StudentController.java</file>
+            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Model/LeavedStudentDetails.java</file>
+            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/Student_MenuController.java</file>
+            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/All_Student_LeavedController.java</file>
         </group>
     </open-files>
 </project-private>
