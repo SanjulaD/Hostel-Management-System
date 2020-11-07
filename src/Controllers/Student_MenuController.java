@@ -69,4 +69,16 @@ public class Student_MenuController implements Initializable {
         login.setResizable(false);
     }
 
+    @FXML
+    private void deleteStudentAction(MouseEvent event) throws IOException {
+        deleteStudent.getScene().getWindow().hide();
+
+        Stage login = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Delete_Student.fxml"));
+        Scene scene = new Scene(root);
+        login.setScene(scene);
+        login.show();
+        login.setResizable(false);
+    }
+
 }

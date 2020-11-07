@@ -15,6 +15,7 @@ import javafx.beans.property.StringProperty;
 public class StudentDetails {
 
     // model class holding getters, setters and properties
+    private StringProperty id;
     private StringProperty name;
     private StringProperty nsbmid;
     private StringProperty email;
@@ -24,7 +25,8 @@ public class StudentDetails {
     private StringProperty guardName;
     private StringProperty guardTel;
 
-    public StudentDetails(String name, String nsbmid, String email, String phoneNumber, String nic, String address, String guardName, String guardTel) {
+    public StudentDetails(String id,String name, String nsbmid, String email, String phoneNumber, String nic, String address, String guardName, String guardTel) {
+        this.id = new SimpleStringProperty(id);
         this.name = new SimpleStringProperty(name);
         this.nsbmid = new SimpleStringProperty(nsbmid);
         this.email = new SimpleStringProperty(email);
@@ -36,6 +38,10 @@ public class StudentDetails {
     }
 
     // Getters
+    public String getId() {
+        return id.get();
+    }
+    
     public String getName() {
         return name.get();
     }
@@ -69,6 +75,9 @@ public class StudentDetails {
     }
 
     // Setters
+    public void setId(String value) {
+        id.set(value);
+    }
     
     public void setName(String value) {
         name.set(value);
@@ -103,6 +112,8 @@ public class StudentDetails {
     }
     
     // Propert values
+    
+    public StringProperty idProperty() { return id; }
     
     public StringProperty nameProperty() { return name; }
     

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.Update_StudentController">
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="1338.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Update_StudentController">
    <children>
        <Pane layoutX="-15.0" layoutY="-15.0" prefHeight="523.0" prefWidth="539.0" style="-fx-background-color: #fbfbff;">
          <children>
@@ -30,53 +30,83 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <TextField fx:id="reg_txt_guardname" layoutX="287.0" layoutY="277.0" prefHeight="35.0" prefWidth="211.0" promptText="guardian">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="287.0" layoutY="254.0" prefHeight="17.0" prefWidth="106.0" text="GUARDIAN NAME" textFill="#0d0106">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reg_txt_guardtel" layoutX="288.0" layoutY="346.0" prefHeight="35.0" prefWidth="211.0" promptText="guardian phone">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="288.0" layoutY="323.0" prefHeight="17.0" prefWidth="106.0" text="GUARDIAN TEL" textFill="#0d0106">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reg_txt_nic" layoutX="286.0" layoutY="209.0" prefHeight="35.0" prefWidth="211.0" promptText="nic">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="286.0" layoutY="185.0" prefHeight="17.0" prefWidth="59.0" text="NIC" textFill="#0d0106">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reg_txt_id" layoutX="51.0" layoutY="72.0" prefHeight="35.0" prefWidth="211.0" promptText="id">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="51.0" layoutY="49.0" prefHeight="17.0" prefWidth="39.0" text="ID" textFill="#0d0106">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
          </children></Pane>
-      <TextField fx:id="reg_txt_username" layoutX="39.0" layoutY="56.0" prefHeight="35.0" prefWidth="211.0" promptText="name">
+      <TextField fx:id="reg_txt_username" layoutX="39.0" layoutY="123.0" prefHeight="35.0" prefWidth="211.0" promptText="name">
          <font>
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_nsbmid" layoutX="39.0" layoutY="125.0" prefHeight="35.0" prefWidth="211.0" promptText="nsbm id">
+      <TextField fx:id="reg_txt_nsbmid" layoutX="39.0" layoutY="192.0" prefHeight="35.0" prefWidth="211.0" promptText="nsbm id">
          <font>
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_email" layoutX="39.0" layoutY="194.0" prefHeight="35.0" prefWidth="211.0" promptText="email">
+      <TextField fx:id="reg_txt_email" layoutX="39.0" layoutY="261.0" prefHeight="35.0" prefWidth="211.0" promptText="email">
          <font>
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_phnmb" layoutX="39.0" layoutY="264.0" prefHeight="35.0" prefWidth="211.0" promptText="phone number">
+      <TextField fx:id="reg_txt_phnmb" layoutX="39.0" layoutY="331.0" prefHeight="35.0" prefWidth="211.0" promptText="phone number">
          <font>
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_nic" layoutX="39.0" layoutY="329.0" prefHeight="35.0" prefWidth="211.0" promptText="nic">
-         <font>
-            <Font name="Segoe UI" size="13.0" />
-         </font>
-      </TextField>
-      <Label layoutX="39.0" layoutY="33.0" prefHeight="17.0" prefWidth="39.0" text="NAME" textFill="#0d0106">
+      <Label layoutX="39.0" layoutY="100.0" prefHeight="17.0" prefWidth="39.0" text="NAME" textFill="#0d0106">
          <font>
             <Font name="Segoe UI" size="10.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="103.0" prefHeight="17.0" prefWidth="59.0" text="NSBM ID" textFill="#0d0106">
+      <Label layoutX="39.0" layoutY="170.0" prefHeight="17.0" prefWidth="59.0" text="NSBM ID" textFill="#0d0106">
          <font>
             <Font name="Segoe UI" size="10.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="173.0" prefHeight="17.0" prefWidth="59.0" text="EMAIL" textFill="#0d0106">
+      <Label layoutX="39.0" layoutY="240.0" prefHeight="17.0" prefWidth="59.0" text="EMAIL" textFill="#0d0106">
          <font>
             <Font name="Segoe UI" size="10.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="240.0" prefHeight="17.0" prefWidth="86.0" text="PHONE NUMBER" textFill="#0d0106">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
-         </font>
-      </Label>
-      <Label layoutX="39.0" layoutY="305.0" prefHeight="17.0" prefWidth="59.0" text="NIC" textFill="#0d0106">
+      <Label layoutX="39.0" layoutY="307.0" prefHeight="17.0" prefWidth="86.0" text="PHONE NUMBER" textFill="#0d0106">
          <font>
             <Font name="Segoe UI" size="10.0" />
          </font>
@@ -91,36 +121,17 @@
             <Font name="Segoe UI" size="10.0" />
          </font>
       </Label>
-      <TextField fx:id="reg_txt_guardname" layoutX="271.0" layoutY="193.0" prefHeight="35.0" prefWidth="211.0" promptText="guardian">
-         <font>
-            <Font name="Segoe UI" size="13.0" />
-         </font>
-      </TextField>
-      <Label layoutX="271.0" layoutY="170.0" prefHeight="17.0" prefWidth="106.0" text="GUARDIAN NAME" textFill="#0d0106">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
-         </font>
-      </Label>
-      <TextField fx:id="reg_txt_guardtel" layoutX="272.0" layoutY="262.0" prefHeight="35.0" prefWidth="211.0" promptText="guardian phone">
-         <font>
-            <Font name="Segoe UI" size="13.0" />
-         </font>
-      </TextField>
-      <Label layoutX="272.0" layoutY="239.0" prefHeight="17.0" prefWidth="106.0" text="GUARDIAN TEL" textFill="#0d0106">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
-         </font>
-      </Label>
-      <TableView fx:id="tableStudent" editable="true" layoutX="524.0" layoutY="45.0" prefHeight="391.0" prefWidth="737.0">
+      <TableView fx:id="tableStudent" editable="true" layoutX="503.0" layoutY="45.0" onMouseClicked="#displaySelectedAction" prefHeight="391.0" prefWidth="814.0">
         <columns>
-          <TableColumn fx:id="col_name" prefWidth="77.0" text="NAME" />
-          <TableColumn fx:id="col_nsbmid" prefWidth="73.0" text="NSBM ID" />
-            <TableColumn fx:id="col_email" prefWidth="77.0" text="EMAIL" />
-            <TableColumn fx:id="col_phonenumber" prefWidth="117.0" text="PHONE NUMBER" />
-            <TableColumn fx:id="col_nic" prefWidth="108.0" text="NIC" />
-            <TableColumn fx:id="col_address" minWidth="0.0" prefWidth="118.0" text="ADDRESS" />
-            <TableColumn fx:id="col_g_name" prefWidth="75.0" text="G_NAME" />
-            <TableColumn fx:id="col_g_tel" prefWidth="90.0" text="G_TEL" />
+            <TableColumn fx:id="col_id" prefWidth="35.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="119.0" text="NAME" />
+          <TableColumn fx:id="col_nsbmid" prefWidth="77.0" text="NSBM ID" />
+            <TableColumn fx:id="col_email" prefWidth="119.0" text="EMAIL" />
+            <TableColumn fx:id="col_phonenumber" prefWidth="126.0" text="PHONE NUMBER" />
+            <TableColumn fx:id="col_nic" text="NIC" />
+            <TableColumn fx:id="col_address" minWidth="0.0" prefWidth="91.0" text="ADDRESS" />
+            <TableColumn fx:id="col_g_name" prefWidth="84.0" text="G_NAME" />
+            <TableColumn fx:id="col_g_tel" prefWidth="81.0" text="G_TEL" />
         </columns>
       </TableView>
       
