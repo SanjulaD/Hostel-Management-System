@@ -20,12 +20,18 @@ import static javafx.scene.input.KeyCode.C;
 import javafx.scene.input.MouseEvent;
 
 import DBConnection.DBHandler;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javafx.collections.FXCollections;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 /**
@@ -65,6 +71,8 @@ public class All_Student_LivingController implements Initializable {
     private Connection connection;
     private DBHandler handler;
     private PreparedStatement pst;
+    @FXML
+    private Button btn_back;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -98,6 +106,18 @@ public class All_Student_LivingController implements Initializable {
 
         tableStudent.setItems(null);
         tableStudent.setItems(data);
+    }
+
+    @FXML
+    private void back_btn_clicked(MouseEvent event) throws IOException {
+        btn_back.getScene().getWindow().hide();
+
+        Stage stu_Menu = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student_Menu.fxml"));
+        Scene scene = new Scene(root);
+        stu_Menu.setScene(scene);
+        stu_Menu.show();
+        stu_Menu.setResizable(false);
     }
 
 }

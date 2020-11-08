@@ -14,7 +14,7 @@
    <children>
        <Pane layoutX="-15.0" layoutY="-15.0" prefHeight="523.0" prefWidth="539.0" style="-fx-background-color: #fbfbff;">
          <children>
-            <Button id="signIn" fx:id="btn_update_student" layoutX="110.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#updateStudentButtonAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="UPDATE" textFill="WHITE">
+            <Button id="signIn" fx:id="btn_update_student" layoutX="51.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#updateStudentButtonAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="UPDATE" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -22,7 +22,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button id="signIn" fx:id="btn_refersh" layoutX="294.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="REFRESH" textFill="WHITE">
+            <Button id="signIn" fx:id="btn_refersh" layoutX="225.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="REFRESH" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -70,6 +70,14 @@
                   <Font name="Segoe UI" size="10.0" />
                </font>
             </Label>
+            <Button id="btn_back" fx:id="btn_back" layoutX="396.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children></Pane>
       <TextField fx:id="reg_txt_username" layoutX="39.0" layoutY="123.0" prefHeight="35.0" prefWidth="211.0" promptText="name">
          <font>

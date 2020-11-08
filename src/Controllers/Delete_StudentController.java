@@ -7,6 +7,7 @@ package Controllers;
 
 import DBConnection.DBHandler;
 import Model.StudentDetails;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,7 +17,10 @@ import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -24,6 +28,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 /**
@@ -88,6 +93,8 @@ public class Delete_StudentController implements Initializable {
     private TableColumn<StudentDetails, String> col_g_tel;
     @FXML
     private DatePicker dateLeaved;
+    @FXML
+    private Button btn_back;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -244,6 +251,18 @@ public class Delete_StudentController implements Initializable {
         reg_txt_guardname.setText("");
         reg_txt_guardtel.setText("");
         dateLeaved.setValue(null);
+    }
+
+    @FXML
+    private void back_btn_clicked(MouseEvent event) throws IOException {
+        btn_back.getScene().getWindow().hide();
+
+        Stage stu_Menu = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student_Menu.fxml"));
+        Scene scene = new Scene(root);
+        stu_Menu.setScene(scene);
+        stu_Menu.show();
+        stu_Menu.setResizable(false);
     }
 
 }

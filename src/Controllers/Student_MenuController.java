@@ -36,6 +36,8 @@ public class Student_MenuController implements Initializable {
     private Button allStudentLiving;
     @FXML
     private Button leavedStudent;
+    @FXML
+    private Button btn_back;
 
     /**
      * Initializes the controller class.
@@ -99,6 +101,18 @@ public class Student_MenuController implements Initializable {
 
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/All_Student_Leaved.fxml"));
+        Scene scene = new Scene(root);
+        login.setScene(scene);
+        login.show();
+        login.setResizable(false);
+    }
+
+    @FXML
+    private void back_btn_clicked(MouseEvent event) throws IOException {
+        btn_back.getScene().getWindow().hide();
+
+        Stage login = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/MenuComponent.fxml"));
         Scene scene = new Scene(root);
         login.setScene(scene);
         login.show();

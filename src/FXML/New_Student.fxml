@@ -8,10 +8,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/javafx" fx:controller="Controllers.New_StudentController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.New_StudentController">
    <children>
-      <Pane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #3626A7;" />
+      <Pane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #3626A7;">
+         <children>
+            <Button id="btn_back" fx:id="btn_back" layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></Pane>
       <Label layoutX="514.0" layoutY="29.0" prefHeight="19.0" prefWidth="106.0" text="R E G I S T E R" textAlignment="CENTER" textFill="#3626a7">
          <font>
             <Font name="Segoe UI Bold" size="15.0" />

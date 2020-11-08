@@ -18,6 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import DBConnection.DBHandler;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -25,7 +26,11 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.collections.FXCollections;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 /**
@@ -89,6 +94,8 @@ public class Update_StudentController implements Initializable {
     private TextField reg_txt_id;
     @FXML
     private TableColumn<StudentDetails, String> col_id;
+    @FXML
+    private Button btn_back;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -238,6 +245,18 @@ public class Update_StudentController implements Initializable {
             reg_txt_guardname.setText(g_name);
             reg_txt_guardtel.setText(g_tel);
         }
+    }
+
+    @FXML
+    private void back_btn_clicked(MouseEvent event) throws IOException {
+        btn_back.getScene().getWindow().hide();
+
+        Stage stu_Menu = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student_Menu.fxml"));
+        Scene scene = new Scene(root);
+        stu_Menu.setScene(scene);
+        stu_Menu.show();
+        stu_Menu.setResizable(false);
     }
 
 }

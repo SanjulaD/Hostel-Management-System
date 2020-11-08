@@ -28,6 +28,8 @@ public class MenuComponentController implements Initializable {
     private Button btn_student;
     @FXML
     private Button btn_employee;
+    @FXML
+    private Button btn_back;
 
     /**
      * Initializes the controller class.
@@ -43,6 +45,18 @@ public class MenuComponentController implements Initializable {
 
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student_Menu.fxml"));
+        Scene scene = new Scene(root);
+        stu_Menu.setScene(scene);
+        stu_Menu.show();
+        stu_Menu.setResizable(false);
+    }
+
+    @FXML
+    private void back_btn_clicked(MouseEvent event) throws IOException {
+        btn_back.getScene().getWindow().hide();
+
+        Stage stu_Menu = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
         Scene scene = new Scene(root);
         stu_Menu.setScene(scene);
         stu_Menu.show();
