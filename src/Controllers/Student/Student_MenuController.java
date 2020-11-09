@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controllers;
+package Controllers.Student;
 
 import java.io.IOException;
 import java.net.URL;
@@ -52,7 +52,7 @@ public class Student_MenuController implements Initializable {
         addNewStudent.getScene().getWindow().hide();
 
         Stage login = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/New_Student.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/New_Student.fxml"));
         Scene scene = new Scene(root);
         login.setScene(scene);
         login.show();
@@ -64,7 +64,7 @@ public class Student_MenuController implements Initializable {
         updateStudent.getScene().getWindow().hide();
 
         Stage login = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Update_Student.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Update_Student.fxml"));
         Scene scene = new Scene(root);
         login.setScene(scene);
         login.show();
@@ -76,7 +76,7 @@ public class Student_MenuController implements Initializable {
         allStudentLiving.getScene().getWindow().hide();
 
         Stage login = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Delete_Student.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Delete_Student.fxml"));
         Scene scene = new Scene(root);
         login.setScene(scene);
         login.show();
@@ -88,7 +88,7 @@ public class Student_MenuController implements Initializable {
         deleteStudent.getScene().getWindow().hide();
 
         Stage login = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/All_Student_Living.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/All_Student_Living.fxml"));
         Scene scene = new Scene(root);
         login.setScene(scene);
         login.show();
@@ -100,7 +100,7 @@ public class Student_MenuController implements Initializable {
         leavedStudent.getScene().getWindow().hide();
 
         Stage login = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/All_Student_Leaved.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/All_Student_Leaved.fxml"));
         Scene scene = new Scene(root);
         login.setScene(scene);
         login.show();

@@ -44,7 +44,7 @@ public class MenuComponentController implements Initializable {
         btn_student.getScene().getWindow().hide();
 
         Stage stu_Menu = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student_Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
         stu_Menu.setScene(scene);
         stu_Menu.show();

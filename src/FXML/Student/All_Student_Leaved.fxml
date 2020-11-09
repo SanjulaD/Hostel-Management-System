@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.All_Student_LeavedController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.Student.All_Student_LeavedController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="620.0" prefWidth="1000.0">
          <children>
@@ -31,7 +31,7 @@
                   <Font name="Segoe UI Bold" size="37.0" />
                </font>
             </Label>
-            <Button id="btn_back" fx:id="btn_back" layoutX="450.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+            <Button id="btn_back" fx:id="btn_back" layoutX="450.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="15.0" />
                </font>

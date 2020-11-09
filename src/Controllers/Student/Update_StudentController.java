@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controllers;
+package Controllers.Student;
 
 import Model.StudentDetails;
 import java.net.URL;
@@ -252,7 +252,7 @@ public class Update_StudentController implements Initializable {
         btn_back.getScene().getWindow().hide();
 
         Stage stu_Menu = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student_Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
         stu_Menu.setScene(scene);
         stu_Menu.show();

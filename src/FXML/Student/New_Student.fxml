@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.New_StudentController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.Student.New_StudentController">
    <children>
       <Pane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #3626A7;">
          <children>
-            <Button id="btn_back" fx:id="btn_back" layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+            <Button id="btn_back" fx:id="btn_back" layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="17.0" />
                </font>
@@ -51,7 +51,7 @@
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <Button id="signIn" fx:id="btn_reg_student" layoutX="376.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="35.0" prefWidth="372.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Register" textFill="WHITE">
+      <Button id="signIn" fx:id="btn_reg_student" layoutX="376.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="35.0" prefWidth="372.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="Register" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>

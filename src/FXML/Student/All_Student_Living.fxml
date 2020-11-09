@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.All_Student_LivingController">
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Student.All_Student_LivingController">
    <children>
       <TableView fx:id="tableStudent" editable="true" layoutX="91.0" layoutY="141.0" prefHeight="391.0" prefWidth="814.0">
          <columns>
@@ -28,7 +28,7 @@
             <Font name="Segoe UI Bold" size="37.0" />
          </font>
       </Label>
-      <Button id="btn_back" fx:id="btn_back" layoutX="469.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+      <Button id="btn_back" fx:id="btn_back" layoutX="469.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="15.0" />
          </font>
