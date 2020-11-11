@@ -47,7 +47,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button id="btn" fx:id="leavedStudent" layoutX="213.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#leavedStudentAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="LEAVED STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <Button id="btn" fx:id="leavedStudent" layoutX="213.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#leavedStudentAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="ALL STUDENT LEAVED " textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font name="Segoe UI" size="20.0" />
          </font>

@@ -6,17 +6,13 @@
 package Controllers.Student;
 
 import Model.StudentDetails;
-import static java.awt.PageAttributes.MediaType.C;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import static javafx.print.Paper.C;
-import javafx.scene.control.SortEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import static javafx.scene.input.KeyCode.C;
 import javafx.scene.input.MouseEvent;
 
 import DBConnection.DBHandler;

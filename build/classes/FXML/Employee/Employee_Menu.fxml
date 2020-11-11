@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.Employee.Employee_MenuController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Employee_MenuController">
    <children>
       <Button id="btn" fx:id="addNewEmployee" layoutX="30.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#addNewEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="NEW EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
@@ -47,7 +47,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button id="btn" fx:id="leavedEmployee" layoutX="213.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#leavedEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="EMPLOYEE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <Button id="btn" fx:id="leavedEmployee" layoutX="213.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#leavedEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="ALL EMPLOYEE LEAVED" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font name="Segoe UI" size="20.0" />
          </font>
