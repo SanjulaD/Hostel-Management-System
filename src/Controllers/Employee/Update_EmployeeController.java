@@ -217,5 +217,5 @@ public class Update_EmployeeController implements Initializable {
         tableEmployee.setItems(null);
         tableEmployee.setItems(data);
     }
-    
+
 }

@@ -84,7 +84,7 @@ public class New_EmployeeController implements Initializable {
             JOptionPane.showMessageDialog(null, "All Fields Are Required!");
             setTExtRefresh();
         } else {
-            String insert = "INSERT INTO register_Employee(name,nic,phone,eme_phone)" + "VALUES(?,?,?,?)";
+            String insert = "INSERT INTO register_Employee(name,nic,tel,emg_tel)" + "VALUES(?,?,?,?)";
             connection = handler.connectDB();
             try {
                 pst = connection.prepareStatement(insert);
