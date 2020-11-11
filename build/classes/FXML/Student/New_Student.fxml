@@ -51,7 +51,7 @@
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <Button id="signIn" fx:id="btn_reg_student" layoutX="376.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="35.0" prefWidth="372.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="Register" textFill="WHITE">
+      <Button id="signIn" fx:id="btn_reg_student" layoutX="376.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#registerButtonAction" prefHeight="35.0" prefWidth="372.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="Register" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>

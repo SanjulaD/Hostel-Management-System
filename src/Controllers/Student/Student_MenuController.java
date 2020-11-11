@@ -31,13 +31,13 @@ public class Student_MenuController implements Initializable {
     @FXML
     private Button deleteStudent;
     @FXML
-    private Button studentFees;
-    @FXML
     private Button allStudentLiving;
     @FXML
     private Button leavedStudent;
     @FXML
     private Button btn_back;
+    @FXML
+    private Button studentFees;
 
     /**
      * Initializes the controller class.
@@ -118,5 +118,7 @@ public class Student_MenuController implements Initializable {
         login.show();
         login.setResizable(false);
     }
+
+
 
 }

@@ -44,8 +44,6 @@ public class New_StudentController implements Initializable {
     @FXML
     private TextField reg_txt_nic;
     @FXML
-    private Button btn_reg_student;
-    @FXML
     private TextField reg_txt_address;
     @FXML
     private TextField reg_txt_guardname;
@@ -60,6 +58,8 @@ public class New_StudentController implements Initializable {
     private PreparedStatement pst;
     @FXML
     private Button btn_back;
+    @FXML
+    private Button btn_reg_student;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -68,7 +68,7 @@ public class New_StudentController implements Initializable {
     }
 
     @FXML
-    private void signInButtonAction(MouseEvent event) {
+    private void registerButtonAction(MouseEvent event) {
         String userName = reg_txt_username.getText();
         String nsbmID = reg_txt_nsbmid.getText();
         String email = reg_txt_email.getText();
@@ -85,36 +85,35 @@ public class New_StudentController implements Initializable {
                 || nic.equals("")
                 || address.equals("")
                 || guardName.equals("")
-                || guardTel.equals(""))
-        {
+                || guardTel.equals("")) {
             JOptionPane.showMessageDialog(null, "All Fields Are Required!");
-        }
-        else
-        {
-             String insert = "INSERT INTO register_Students(name,nsbmID,email,phoneNumber,nic,address,guardName,guardTel)" + "VALUES(?,?,?,?,?,?,?,?)";
-        connection = handler.connectDB();
-        try {
-            pst = connection.prepareStatement(insert);
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        try {
-            pst.setString(1, reg_txt_username.getText());
-            pst.setString(2, reg_txt_nsbmid.getText());
-            pst.setString(3, reg_txt_email.getText());
-            pst.setString(4, reg_txt_phnmb.getText());
-            pst.setString(5, reg_txt_nic.getText());
-            pst.setString(6, reg_txt_address.getText());
-            pst.setString(7, reg_txt_guardname.getText());
-            pst.setString(8, reg_txt_guardtel.getText());
-            
-            pst.executeUpdate();
-            
-            JOptionPane.showMessageDialog(null, "Registered!");
-        } catch (SQLException ex) {
-            Logger.getLogger(New_StudentController.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(null, ex.getMessage());
-        }   
+            setTExtRefresh();
+        } else {
+            String insert = "INSERT INTO register_Students(name,nsbmID,email,phoneNumber,nic,address,guardName,guardTel)" + "VALUES(?,?,?,?,?,?,?,?)";
+            connection = handler.connectDB();
+            try {
+                pst = connection.prepareStatement(insert);
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+            try {
+                pst.setString(1, reg_txt_username.getText());
+                pst.setString(2, reg_txt_nsbmid.getText());
+                pst.setString(3, reg_txt_email.getText());
+                pst.setString(4, reg_txt_phnmb.getText());
+                pst.setString(5, reg_txt_nic.getText());
+                pst.setString(6, reg_txt_address.getText());
+                pst.setString(7, reg_txt_guardname.getText());
+                pst.setString(8, reg_txt_guardtel.getText());
+
+                pst.executeUpdate();
+
+                JOptionPane.showMessageDialog(null, "Registered!");
+                setTExtRefresh();
+            } catch (SQLException ex) {
+                Logger.getLogger(New_StudentController.class.getName()).log(Level.SEVERE, null, ex);
+                JOptionPane.showMessageDialog(null, ex.getMessage());
+            }
         }
     }
 
@@ -129,5 +128,18 @@ public class New_StudentController implements Initializable {
         stu_Menu.show();
         stu_Menu.setResizable(false);
     }
+    
+    @FXML
+    private void setTExtRefresh() {
+        reg_txt_username.setText("");
+        reg_txt_nsbmid.setText("");
+        reg_txt_email.setText("");
+        reg_txt_phnmb.setText("");
+        reg_txt_nic.setText("");
+        reg_txt_address.setText("");
+        reg_txt_guardname.setText("");
+        reg_txt_guardtel.setText("");
+    }
+
 
 }

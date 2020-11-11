@@ -100,6 +100,15 @@ public class Delete_StudentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         handler = new DBHandler();
+        reg_txt_nic.setDisable(true);
+        reg_txt_id.setDisable(true);
+        reg_txt_guardname.setDisable(true);
+        reg_txt_guardtel.setDisable(true);
+        reg_txt_email.setDisable(true);
+        reg_txt_phnmb.setDisable(true);
+        reg_txt_address.setDisable(true);
+        reg_txt_username.setDisable(true);
+        reg_txt_nsbmid.setDisable(true);
     }
 
     @FXML

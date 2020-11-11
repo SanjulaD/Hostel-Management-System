@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Student.Student_MenuController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.Student.Student_MenuController">
    <children>
       <Button id="btn" fx:id="addNewStudent" layoutX="30.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#addNewStudentAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="NEW STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>

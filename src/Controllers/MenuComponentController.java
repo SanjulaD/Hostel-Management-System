@@ -63,4 +63,16 @@ public class MenuComponentController implements Initializable {
         stu_Menu.setResizable(false);
     }
 
+    @FXML
+    private void employee_btn_clicked(MouseEvent event) throws IOException {
+        btn_employee.getScene().getWindow().hide();
+
+        Stage stu_Menu = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Employee/Employee_Menu.fxml"));
+        Scene scene = new Scene(root);
+        stu_Menu.setScene(scene);
+        stu_Menu.show();
+        stu_Menu.setResizable(false);
+    }
+
 }
