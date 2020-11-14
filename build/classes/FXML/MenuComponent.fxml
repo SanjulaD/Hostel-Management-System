@@ -15,7 +15,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button id="btn" fx:id="btn_employee" layoutX="59.0" layoutY="244.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="183.0" style="-fx-background-color: #3626A7;" stylesheets="@../Styles/menucomponent.css" text="EMPLOYEE" textFill="WHITE">
+      <Button id="btn" fx:id="btn_employee" layoutX="59.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#employee_btn_clicked" prefHeight="73.0" prefWidth="183.0" style="-fx-background-color: #3626A7;" stylesheets="@../Styles/menucomponent.css" text="EMPLOYEE" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="17.0" />
          </font>
