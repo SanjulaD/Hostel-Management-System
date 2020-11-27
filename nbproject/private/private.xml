@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/Student/New_StudentController.java</file>
-            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/DBConnection/DBHandler.java</file>
-            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/FXML/Login.fxml</file>
-            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Styles/loginStyle.css</file>
-            <file>file:/G:/NSBM/JAVA%20Project/Hostel-Management-System/src/Controllers/Employee/New_EmployeeController.java</file>
+            <file>file:/E:/GitHub/Hostel-Management-System/src/Controllers/LoginController.java</file>
+            <file>file:/E:/GitHub/Hostel-Management-System/src/FXML/Login.fxml</file>
         </group>
     </open-files>
 </project-private>

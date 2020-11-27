@@ -19,12 +19,12 @@ import javafx.stage.Stage;
  *
  * @author User
  */
-public class Main extends Application {
+public class Main extends Application { 
     
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/FXML/MenuComponent.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
