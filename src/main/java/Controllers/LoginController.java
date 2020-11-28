@@ -40,6 +40,8 @@ public class LoginController implements Initializable {
     private Label txt_label;
     @FXML
     private CheckBox pass_toggle;
+    @FXML
+    private Button btnClose;
 
     /**
      * Initializes the controller class.
@@ -78,5 +80,10 @@ public class LoginController implements Initializable {
             return;
         }
     }
-
+    
+    @FXML
+    public void closeLogin(ActionEvent event) {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        stage.close();
+    }
 }
