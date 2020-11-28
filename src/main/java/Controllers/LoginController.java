@@ -15,12 +15,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javax.swing.JOptionPane;
 
 /**
@@ -40,6 +43,8 @@ public class LoginController implements Initializable {
     private Label txt_label;
     @FXML
     private CheckBox pass_toggle;
+    @FXML
+    private Button btnClose;
 
     /**
      * Initializes the controller class.
@@ -63,6 +68,8 @@ public class LoginController implements Initializable {
             Stage MenuCompo = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource("/FXML/MenuComponent.fxml"));
             Scene scene = new Scene(root);
+            MenuCompo.initStyle(StageStyle.TRANSPARENT);
+            //scene.setFill(Color.TRANSPARENT);
             MenuCompo.setScene(scene);
             MenuCompo.show();
             MenuCompo.setResizable(false);
@@ -77,6 +84,12 @@ public class LoginController implements Initializable {
             txt_password.setText(txt_password.getText());
             return;
         }
+    }
+    
+    @FXML
+    public void closeLogin(ActionEvent event) {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        stage.close();
     }
 
 }

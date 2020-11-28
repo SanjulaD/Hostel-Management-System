@@ -8,6 +8,7 @@ package Controllers;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,6 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -24,6 +26,8 @@ import javafx.stage.Stage;
  */
 public class MenuComponentController implements Initializable {
 
+    double xoffset, yoffset;
+            
     @FXML
     private Button btn_student;
     @FXML
@@ -46,6 +50,7 @@ public class MenuComponentController implements Initializable {
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);
@@ -54,13 +59,28 @@ public class MenuComponentController implements Initializable {
     @FXML
     private void back_btn_clicked(MouseEvent event) throws IOException {
         btn_back.getScene().getWindow().hide();
-
+        
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
         Scene scene = new Scene(root);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);
+        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event){
+                    xoffset = event.getSceneX();
+                    yoffset = event.getSceneY();
+                }
+            });
+            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event){
+                    stu_Menu.setX(event.getScreenX() - xoffset);
+                    stu_Menu.setY(event.getScreenY() - yoffset);
+                }
+            });
     }
 
     @FXML
@@ -70,6 +90,7 @@ public class MenuComponentController implements Initializable {
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Employee/Employee_Menu.fxml"));
         Scene scene = new Scene(root);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);
