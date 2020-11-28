@@ -36,7 +36,7 @@
                </font>
             </Label>
             <Text fill="WHITE" layoutX="70.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Log In to Your Account" />
-            <Button fx:id="btn_signIn" contentDisplay="CENTER" layoutX="115.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="67.0" prefWidth="172.0" style="-fx-background-color: #1FDDDD; -fx-font-size: 20;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Log In" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="btn_signIn" contentDisplay="CENTER" layoutX="115.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #1FDDDD; -fx-font-size: 20;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Log In" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

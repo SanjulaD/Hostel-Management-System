@@ -9,33 +9,45 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" stylesheets="@../Styles/loginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
    <children>
-      <Pane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #3626A7;" />
-      <TextField fx:id="txt_username" layoutX="397.0" layoutY="143.0" prefHeight="35.0" prefWidth="260.0" promptText="username">
-         <font>
-            <Font name="Segoe UI" size="13.0" />
-         </font>
-      </TextField>
-      <PasswordField fx:id="txt_password" layoutX="397.0" layoutY="212.0" prefHeight="35.0" prefWidth="260.0" promptText="password">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </PasswordField>
-      <CheckBox fx:id="pass_toggle" layoutX="397.0" layoutY="271.0" mnemonicParsing="false" onAction="#togglevisiblePassword" text="Stay Signed in" />
-      <Button id="signIn" fx:id="btn_signIn" layoutX="397.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Sign in" textFill="WHITE">
-         <font>
-            <Font size="14.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Label fx:id="txt_label" layoutX="449.0" layoutY="250.0" prefHeight="17.0" prefWidth="152.0" textFill="RED">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
-         </font>
-      </Label>
+      <Pane prefHeight="540.0" prefWidth="960.0" style="-fx-background-image: 25106.jpg;" styleClass="background" stylesheets="@Styles/loginStyle.css">
+         <children>
+            <TextField fx:id="txt_username" layoutX="70.0" layoutY="178.0" prefHeight="35.0" prefWidth="260.0" promptText="Username" style="-fx-border-color: #1FDDDD; -fx-font-size: 15;" stylesheets="@Styles/loginStyle.css">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txt_password" layoutX="70.0" layoutY="253.0" prefHeight="35.0" prefWidth="260.0" promptText="Password" style="-fx-border-color: #1FDDDD; -fx-font-size: 15;" stylesheets="@Styles/loginStyle.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <CheckBox fx:id="pass_toggle" layoutX="70.0" layoutY="328.0" mnemonicParsing="false" onAction="#togglevisiblePassword" style="-fx-font-size: 15;" stylesheets="@Styles/loginStyle.css" text="Stay Logged In" textFill="#c2c2c2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckBox>
+            <Label fx:id="txt_label" layoutX="124.0" layoutY="297.0" prefHeight="17.0" prefWidth="152.0" textFill="RED">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="70.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Log In to Your Account" />
+            <Button fx:id="btn_signIn" contentDisplay="CENTER" layoutX="115.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #1FDDDD; -fx-font-size: 20;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Log In" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="#9effff" layoutX="564.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="Hostel Management System " textAlignment="RIGHT" wrappingWidth="363.94921875" />
+            <Text fill="WHITE" layoutX="938.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="16.359375" />
+            <Text fill="WHITE" layoutX="908.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   _" wrappingWidth="39.359375" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

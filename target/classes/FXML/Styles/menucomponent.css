@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#btn {
+    -fx-background-radius: 15px !important;
+}
+#btn:hover{
+    -fx-background-color: #402dc7 !important
+    -fx-alignment: CENTER !important;
+}
+
+#btn_back {
+    -fx-background-radius: 15px !important;
+}
+
+#btn_back:hover{
+    -fx-background-color: #f35846 !important
+    -fx-alignment: CENTER !important;
+}

@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.util.Objects;
+import javafx.scene.paint.Color;
 import javafx.stage.StageStyle;
 
 /**
@@ -28,10 +29,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-
-
             Parent root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
-
             Scene scene = new Scene(root);
             primaryStage.initStyle(StageStyle.TRANSPARENT);
             primaryStage.setScene(scene);
