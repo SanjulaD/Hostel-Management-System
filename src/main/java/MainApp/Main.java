@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.util.Objects;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -29,11 +30,10 @@ public class Main extends Application {
         try {
 
 
-            Parent root = FXMLLoader.load(getClass().getResource("/FXML/MenuComponent.fxml"));
-
-
+            Parent root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
 
             Scene scene = new Scene(root);
+            primaryStage.initStyle(StageStyle.TRANSPARENT);
             primaryStage.setScene(scene);
             primaryStage.show();
             primaryStage.setResizable(false);

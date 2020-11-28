@@ -8,10 +8,18 @@ and open the template in the editor.
     Author     : User
 */
 
-#signIn {
-    -fx-background-radius: 15px !important;
+.signIn {
+    -fx-background-radius: 20px !important;
 }
-#signIn:hover{
+.signIn:hover{
     -fx-background-color: #402dc7 !important
     -fx-alignment: CENTER !important;
+}
+
+.background {
+    -fx-background-image: url("file:G:/3417865.jpg");
+    -fx-background-size: 100% 100%;
+    /*-fx-background-color:  #222222;
+    -fx-background-color: linear-gradient(to left bottom, #00cfcf, #009fbd, #006ea2, #00407a, #00144a);
+*/
 }
