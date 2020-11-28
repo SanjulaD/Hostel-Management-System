@@ -1,0 +1,11 @@
+.signIn {
+    -fx-background-radius: 20px !important;
+}
+.signIn:hover{
+    -fx-background-color: #402dc7 !important
+        -fx-alignment: CENTER !important;
+}
+
+.background {
+    -fx-background-image:url('file:/G:/NSBM/JAVA Project/Hostel-Management-System/src/main/resources/Images/background.jpg');
+}
