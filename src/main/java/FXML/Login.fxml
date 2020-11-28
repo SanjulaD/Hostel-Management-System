@@ -46,7 +46,6 @@
             </Button>
             <Text fill="#9effff" layoutX="564.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="Hostel Management System " textAlignment="RIGHT" wrappingWidth="363.94921875" />
             <Text fill="WHITE" layoutX="938.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="16.359375" />
-            <Text fill="WHITE" layoutX="908.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   _" wrappingWidth="39.359375" />
          </children>
       </Pane>
    </children>

@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 .signIn {
-    -fx-background-radius: 20px !important;
+    -fx-background-radius: 10px !important;
 }
 .signIn:hover{
     -fx-background-color: #402dc7 !important
