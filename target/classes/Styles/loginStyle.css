@@ -10,7 +10,7 @@ and open the template in the editor.
 
 .signIn {
     -fx-background-radius: 50px !important;
-    -fx-background-color:  linear-gradient(to right top, #030555, #00407a, #030555);
+    -fx-background-color:  linear-gradient(to right top, #002265, #0055CF, #002265);
 }
 .signIn:hover{
     -fx-background-color: #1FDDDG !important
@@ -18,7 +18,7 @@ and open the template in the editor.
 }
 
 .background {
-    -fx-background-image: url("file:G:/25106.jpg");
+    -fx-background-image: url("file:src/main/resources/Images/background.jpg");
     -fx-background-size: 100% 100%;
     /*-fx-background-color:  #222222;
     -fx-background-color: linear-gradient(to left bottom, #00cfcf, #009fbd, #006ea2, #00407a, #00144a);
