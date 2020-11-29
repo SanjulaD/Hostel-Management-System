@@ -30,6 +30,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -117,6 +118,7 @@ public class All_Student_LeavedController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
         stu_Menu.setScene(scene);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.show();
         stu_Menu.setResizable(false);
     }

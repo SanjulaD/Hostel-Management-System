@@ -61,6 +61,7 @@ public class Student_MenuController implements Initializable {
         login.setScene(scene);
         login.show();
         login.setResizable(false);
+        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
@@ -73,6 +74,7 @@ public class Student_MenuController implements Initializable {
         login.setScene(scene);
         login.show();
         login.setResizable(false);
+        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
@@ -85,6 +87,7 @@ public class Student_MenuController implements Initializable {
         login.setScene(scene);
         login.show();
         login.setResizable(false);
+        login.initStyle(StageStyle.TRANSPARENT);
     }
     @FXML
     private void studentFeeAction(MouseEvent event) throws IOException {
@@ -96,6 +99,7 @@ public class Student_MenuController implements Initializable {
         login.setScene(scene);
         login.show();
         login.setResizable(false);
+        login.initStyle(StageStyle.TRANSPARENT);
     }
     @FXML
     private void allStudentAction(MouseEvent event) throws IOException {
@@ -107,6 +111,7 @@ public class Student_MenuController implements Initializable {
         login.setScene(scene);
         login.show();
         login.setResizable(false);
+        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
@@ -119,6 +124,7 @@ public class Student_MenuController implements Initializable {
         login.setScene(scene);
         login.show();
         login.setResizable(false);
+        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML

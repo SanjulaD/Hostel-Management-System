@@ -28,6 +28,7 @@ import DBConnection.DBHandler;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -80,6 +81,7 @@ import java.util.logging.Logger;
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
         stu_Menu.setScene(scene);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.show();
         stu_Menu.setResizable(false);
     }

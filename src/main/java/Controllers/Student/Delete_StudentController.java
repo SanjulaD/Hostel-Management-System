@@ -29,6 +29,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javax.swing.JOptionPane;
 
 /**
@@ -270,6 +271,7 @@ public class Delete_StudentController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
         stu_Menu.setScene(scene);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.show();
         stu_Menu.setResizable(false);
     }
