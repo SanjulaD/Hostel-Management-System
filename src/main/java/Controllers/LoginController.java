@@ -32,6 +32,7 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class LoginController implements Initializable {
+    double xoffset, yoffset;
 
     @FXML
     private Button btn_signIn;
@@ -73,6 +74,20 @@ public class LoginController implements Initializable {
             MenuCompo.setScene(scene);
             MenuCompo.show();
             MenuCompo.setResizable(false);
+            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event){
+                    xoffset = event.getSceneX();
+                    yoffset = event.getSceneY();
+                }
+            });
+            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event){
+                    MenuCompo.setX(event.getScreenX() - xoffset);
+                    MenuCompo.setY(event.getScreenY() - yoffset);
+                }
+            });
         } else {
             JOptionPane.showMessageDialog(null, "Incorrect username or password");
         }

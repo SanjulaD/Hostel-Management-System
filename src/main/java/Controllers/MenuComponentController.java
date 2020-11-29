@@ -67,20 +67,6 @@ public class MenuComponentController implements Initializable {
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);
-        root.setOnMousePressed(new EventHandler<MouseEvent>() {
-                @Override
-                public void handle(MouseEvent event){
-                    xoffset = event.getSceneX();
-                    yoffset = event.getSceneY();
-                }
-            });
-            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-                @Override
-                public void handle(MouseEvent event){
-                    stu_Menu.setX(event.getScreenX() - xoffset);
-                    stu_Menu.setY(event.getScreenY() - yoffset);
-                }
-            });
     }
 
     @FXML
