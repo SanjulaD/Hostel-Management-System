@@ -9,16 +9,16 @@ and open the template in the editor.
 */
 
 .signIn {
-    -fx-background-radius: 50px !important;
-    -fx-background-color:  linear-gradient(to right top, #002265, #0055CF, #002265);
+    -fx-background-radius: 20px !important;
+    -fx-background-color:  linear-gradient(to right top, #0055CF, #002265, #0055CF);
 }
 .signIn:hover{
-    -fx-background-color: #1FDDDG !important
-    -fx-alignment: CENTER !important;
+    -fx-background-color: #004bb8;
 }
 
+
 .background {
-    -fx-background-image: url("file:src/main/resources/Images/background.jpg");
+    -fx-background-image: url("file:G:/1434.jpg");
     -fx-background-size: 100% 100%;
     /*-fx-background-color:  #222222;
     -fx-background-color: linear-gradient(to left bottom, #00cfcf, #009fbd, #006ea2, #00407a, #00144a);
