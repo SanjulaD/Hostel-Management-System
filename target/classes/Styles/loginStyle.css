@@ -18,7 +18,6 @@ and open the template in the editor.
 
 
 .background {
-    -fx-background-image: url("file:G:/1434.jpg");
     -fx-background-size: 100% 100%;
     /*-fx-background-color:  #222222;
     -fx-background-color: linear-gradient(to left bottom, #00cfcf, #009fbd, #006ea2, #00407a, #00144a);
