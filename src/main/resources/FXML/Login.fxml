@@ -45,7 +45,7 @@
                </cursor>
             </Button>
             <Text fill="#9effff" layoutX="564.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="Hostel Management System " textAlignment="RIGHT" wrappingWidth="363.94921875" />
-            <Button fx:id="btnClose" layoutX="901.0" layoutY="14.0" minWidth="32.0" mnemonicParsing="false" onAction="#closeLogin" prefHeight="32.0" prefWidth="32.0" style="visibility: true;" styleClass="close" stylesheets="@../Styles/loginStyle.css" text="X" textAlignment="CENTER">
+            <Button fx:id="btnClose" layoutX="901.0" layoutY="14.0" minWidth="32.0" mnemonicParsing="false" onAction="#closeLogin" prefHeight="32.0" prefWidth="32.0" styleClass="close" stylesheets="@../Styles/loginStyle.css" text="X" textAlignment="CENTER">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

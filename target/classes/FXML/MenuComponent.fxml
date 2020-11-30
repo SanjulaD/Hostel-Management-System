@@ -24,9 +24,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button id="btn_back" fx:id="btn_back" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="98.0" stylesheets="@../Styles/menucomponent.css" text="Log Out" textFill="WHITE">
+      <Button id="btn_back" fx:id="btn_back" layoutX="848.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="98.0" stylesheets="@../Styles/menucomponent.css" text="Log Out" textFill="WHITE">
          <font>
-            <Font name="Segoe UI Bold" size="15.0" />
+            <Font name="Segoe UI Semibold" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />

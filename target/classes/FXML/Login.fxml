@@ -3,67 +3,53 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" stylesheets="@../Styles/loginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
    <children>
-      <Pane prefHeight="540.0" prefWidth="960.0" styleClass="background" stylesheets="@../../../src/main/resources/Styles/loginStyle.css">
+      <Pane prefHeight="540.0" prefWidth="960.0" style="-fx-background-image: 25106.jpg;" styleClass="background" stylesheets="@Styles/loginStyle.css">
          <children>
-            <TextField fx:id="txt_pword" layoutX="41.0" layoutY="270.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;" stylesheets="@Styles/loginStyle.css">
+            <TextField fx:id="txt_username" layoutX="70.0" layoutY="178.0" prefHeight="35.0" prefWidth="260.0" promptText="Username" style="-fx-border-color: #1FDDDD; -fx-font-size: 15;" stylesheets="@Styles/loginStyle.css">
                <font>
-                  <Font name="Segoe UI Semilight" size="15.0" />
+                  <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="txt_username" layoutX="41.0" layoutY="195.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="260.0" promptText="Username" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;" stylesheets="@Styles/loginStyle.css">
+            <PasswordField fx:id="txt_password" layoutX="70.0" layoutY="253.0" prefHeight="35.0" prefWidth="260.0" promptText="Password" style="-fx-border-color: #1FDDDD; -fx-font-size: 15;" stylesheets="@Styles/loginStyle.css">
                <font>
-                  <Font name="Segoe UI Semilight" size="15.0" />
-               </font>
-            </TextField>
-            <PasswordField fx:id="txt_password" layoutX="41.0" layoutY="270.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="260.0" promptText="Password" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;" stylesheets="@Styles/loginStyle.css">
-               <font>
-                  <Font name="Segoe UI Semilight" size="15.0" />
+                  <Font size="13.0" />
                </font>
             </PasswordField>
-            <CheckBox fx:id="pass_toggle" layoutX="197.0" layoutY="327.0" mnemonicParsing="false" onAction="#togglevisiblePassword" stylesheets="@Styles/loginStyle.css" text="Show Password" textFill="#cdcdcd">
+            <CheckBox fx:id="pass_toggle" layoutX="70.0" layoutY="328.0" mnemonicParsing="false" onAction="#togglevisiblePassword" style="-fx-font-size: 15;" stylesheets="@Styles/loginStyle.css" text="Stay Logged In" textFill="#c2c2c2">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
             </CheckBox>
-            <Text fill="WHITE" layoutX="53.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In to Your Account">
+            <Label fx:id="txt_label" layoutX="124.0" layoutY="297.0" prefHeight="17.0" prefWidth="152.0" textFill="RED">
                <font>
-                  <Font name="Segoe UI Semibold" size="18.0" />
-               </font></Text>
-            <Button fx:id="btn_signIn" contentDisplay="CENTER" layoutX="42.0" layoutY="416.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="45.0" prefWidth="263.0" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Log In" textAlignment="CENTER" textFill="WHITE">
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="70.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Log In to Your Account" />
+            <Button fx:id="bxtn_signIn" contentDisplay="CENTER" layoutX="62.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="45.0" prefWidth="260.0" style="-fx-background-color: #1FDDDD; -fx-font-size: 20;" styleClass="signIn" stylesheets="@../Styles/loginStyle.css" text="Log In" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font name="Segoe UI Semibold" size="18.0" />
+                  <Font size="14.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Text fill="#030039" layoutX="391.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSTEL MANAGEMENT SYSTEM " textAlignment="RIGHT" wrappingWidth="568.94921875">
-               <font>
-                  <Font name="Segoe UI Black" size="64.0" />
-               </font></Text>
-            <Button fx:id="btnClose" layoutX="910.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeLogin" style="-fx-background-color: transparent;" text="X" textFill="#030039">
-               <font>
-                  <Font name="Segoe UI Semibold" size="18.0" />
-               </font>
+            <Text fill="#9effff" layoutX="564.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="Hostel Management System " textAlignment="RIGHT" wrappingWidth="363.94921875" />
+            <Button fx:id="btnClose" layoutX="901.0" layoutY="14.0" minWidth="32.0" mnemonicParsing="false" onAction="#closeLogin" prefHeight="32.0" prefWidth="32.0" styleClass="close" stylesheets="@../Styles/loginStyle.css" text="X" textAlignment="CENTER">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Line endX="162.0" layoutX="142.0" layoutY="230.0" startX="-100.0" stroke="#00a3ff" />
-            <Line endX="162.0" layoutX="142.0" layoutY="305.0" startX="-100.0" stroke="#00a3ff" />
          </children>
       </Pane>
    </children>
