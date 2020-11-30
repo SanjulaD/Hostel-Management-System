@@ -27,6 +27,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.apache.pdfbox.util.Hex;
 
 /**
@@ -130,6 +131,7 @@ public class New_StudentController implements Initializable {
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_Menu.fxml"));
         Scene scene = new Scene(root);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);

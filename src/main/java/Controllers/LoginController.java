@@ -32,6 +32,7 @@ import javax.swing.JOptionPane;
  * @author User
  */
 public class LoginController implements Initializable {
+    double xoffset, yoffset;
 
     @FXML
     private Button btn_signIn;
@@ -40,9 +41,9 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField txt_password;
     @FXML
-    private Label txt_label;
-    @FXML
     private CheckBox pass_toggle;
+    @FXML
+    private TextField txt_pword;
     @FXML
     private Button btnClose;
 
@@ -73,6 +74,20 @@ public class LoginController implements Initializable {
             MenuCompo.setScene(scene);
             MenuCompo.show();
             MenuCompo.setResizable(false);
+            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event){
+                    xoffset = event.getSceneX();
+                    yoffset = event.getSceneY();
+                }
+            });
+            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event){
+                    MenuCompo.setX(event.getScreenX() - xoffset);
+                    MenuCompo.setY(event.getScreenY() - yoffset);
+                }
+            });
         } else {
             JOptionPane.showMessageDialog(null, "Incorrect username or password");
         }
@@ -81,8 +96,14 @@ public class LoginController implements Initializable {
     @FXML
     private void togglevisiblePassword(ActionEvent event) {
         if (pass_toggle.isSelected()) {
-            txt_password.setText(txt_password.getText());
-            return;
+            txt_pword.setText(txt_password.getText());
+            txt_password.setVisible(false);
+            txt_pword.setVisible(true);
+        }
+        else{
+            txt_password.setText(txt_pword.getText());
+            txt_password.setVisible(true);
+            txt_pword.setVisible(false);
         }
     }
     
