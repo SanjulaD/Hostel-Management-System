@@ -13,12 +13,12 @@
    <children>
       <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
          <image>
-            <Image url="@../../Images/mainbg.jpg" />
+            <Image url="@../../Images/4345.jpg" />
          </image>
       </ImageView>
       <Pane prefHeight="800.0" prefWidth="1280.0">
          <children>
-            <Button id="btn" fx:id="addNewEmployee" layoutX="100.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#addNewEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="NEW EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="addNewEmployee" layoutX="100.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#addNewEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ADD A NEW STAFF MEMBER" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -29,7 +29,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="updateEmployee" layoutX="490.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="updateEmployee" layoutX="490.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE A STAFF RECORD" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -40,7 +40,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="deleteEmployee" layoutX="490.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#deleteEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="deleteEmployee" layoutX="870.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#deleteEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE A STAFF RECORD" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -51,7 +51,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="allEmployeeLiving" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#allEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL EMPLOYEE LIVING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="allEmployeeLiving" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#allEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="VIEW THE LIVE-IN STAFF DETAILSS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -62,7 +62,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="leavedEmployee" layoutX="880.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#leavedEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL EMPLOYEE LEAVED" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="leavedEmployee" layoutX="490.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#leavedEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="VIEW THE LEFT-OUT STAFF DETAILS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -73,7 +73,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="EmployeeFees" layoutX="880.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#employee_feeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="EmployeeFees" layoutX="870.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#employee_feeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="MANAGE STAFF PAYEMENTS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
