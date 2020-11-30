@@ -26,10 +26,3 @@
     -fx-background-color: rgba(255, 0, 166, .9);
     
 }
-
-.panels {
-    /*-fx-background-color: linear-gradient(to right top, #b000ad, #830997, #580a7f, #300765, #03004a);*/
-    -fx-background-image: url("file:G:/34343.jpg");
-    -fx-background-size: 100%;
-    -fx-background-radius: 15px;
-}

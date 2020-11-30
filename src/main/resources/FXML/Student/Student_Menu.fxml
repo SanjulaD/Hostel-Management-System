@@ -3,85 +3,92 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="background" stylesheets="@../../Styles/loginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Student.Student_MenuController">
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Student.Student_MenuController">
    <children>
-      <Button id="btn" fx:id="addNewStudent" layoutX="128.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#addNewStudentAction" prefHeight="250.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="NEW STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI Semibold" size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
-      </Button>
-      <Button id="btn" fx:id="updateStudent" layoutX="490.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#updateStudentAction" prefHeight="250.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI Semibold" size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
-      </Button>
-      <Button id="btn" fx:id="deleteStudent" layoutX="860.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#deleteStudentAction" prefHeight="250.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI Semibold" size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
-      </Button>
-      <Button id="btn" fx:id="studentFees" layoutX="490.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#studentFeeAction" prefHeight="250.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="STUDENT FEES" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI Semibold" size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
-      </Button>
-      <Button id="btn" fx:id="allStudentLiving" layoutX="128.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#allStudentAction" prefHeight="250.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL STUDENT LIVING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI Semibold" size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
-      </Button>
-      <Button id="btn" fx:id="leavedStudent" layoutX="860.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#leavedStudentAction" prefHeight="250.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL STUDENT LEAVED " textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI Semibold" size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
-      </Button>
-      <Button id="btn_back" fx:id="btn_back" layoutX="28.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI" size="17.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <Button id="btn" fx:id="deleteStudent" layoutX="880.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#deleteStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="addNewStudent" layoutX="100.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#addNewStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="NEW STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="updateStudent" layoutX="490.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#updateStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="studentFees" layoutX="490.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#studentFeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="STUDENT FEES" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="allStudentLiving" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#allStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL STUDENT LIVING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="leavedStudent" layoutX="880.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#leavedStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL STUDENT LEAVED " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn_back" fx:id="btn_back" layoutX="1180.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="80.0" stylesheets="@../../Styles/MenuSec.css" text="MENU" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
    </children>
    <cursor>
       <Cursor fx:constant="OPEN_HAND" />

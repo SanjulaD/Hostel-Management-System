@@ -1,70 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Employee_MenuController">
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Employee_MenuController">
    <children>
-      <Button id="btn" fx:id="addNewEmployee" layoutX="30.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#addNewEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="NEW EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="btn" fx:id="updateEmployee" layoutX="215.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="UPDATE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="btn" fx:id="deleteEmployee" layoutX="30.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#deleteEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="DELETE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="btn" fx:id="allEmployeeLiving" layoutX="28.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#allEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="ALL EMPLOYEE LIVING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="btn" fx:id="leavedEmployee" layoutX="213.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#leavedEmployeeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="ALL EMPLOYEE LEAVED" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="btn_back" fx:id="btn_back" layoutX="150.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI" size="17.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="btn" fx:id="EmployeeFees" layoutX="215.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#employee_feeAction" prefHeight="127.0" prefWidth="160.0" style="-fx-background-color: #3626A7;;" stylesheets="@../../Styles/menucomponent.css" text="DELETE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Segoe UI" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/mainbg.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <Button id="btn" fx:id="addNewEmployee" layoutX="100.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#addNewEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="NEW EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="updateEmployee" layoutX="490.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="deleteEmployee" layoutX="490.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#deleteEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="allEmployeeLiving" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#allEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL EMPLOYEE LIVING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="leavedEmployee" layoutX="880.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#leavedEmployeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL EMPLOYEE LEAVED" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn" fx:id="EmployeeFees" layoutX="880.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#employee_feeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE EMPLOYEE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="btn_back" fx:id="btn_back" layoutX="1180.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="80.0" stylesheets="@../../Styles/MenuSec.css" text="MENU" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
    </children>
    <cursor>
-      <Cursor fx:constant="OPEN_HAND" />
+      <Cursor fx:constant="DEFAULT" />
    </cursor>
 </AnchorPane>
