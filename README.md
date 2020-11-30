@@ -21,6 +21,7 @@ Modules as described there are mainly two types of categories, the first one is 
 - Check living Student/Employees
 - Check leaved Student/Employees
 - Search through complete database
+- Scan StudentID using camera and get registration.
 
 ### Installation
 
