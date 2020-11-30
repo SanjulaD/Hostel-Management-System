@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#btn {
+    -fx-background-color: rgba(0, 0, 115, .5);
+    -fx-border-color: #0069ff;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+#btn:hover{
+    -fx-background-color: rgba(0, 0, 115, .8);
+    -fx-border-color: #0091ff;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-border-width: 2px;
+}
+
+#btn_back {
+    -fx-background-radius: 15px;
+    -fx-background-color: rgba(255, 0, 200, .6);
+}
+
+#btn_back:hover{
+    -fx-background-color: rgba(255, 0, 166, .9);
+    
+}
+
+.panels {
+    /*-fx-background-color: linear-gradient(to right top, #b000ad, #830997, #580a7f, #300765, #03004a);*/
+    -fx-background-image: url("file:G:/34343.jpg");
+    -fx-background-size: 100%;
+}
