@@ -58,6 +58,7 @@ public class Employee_MenuController implements Initializable {
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Employee/New_Employee.fxml"));
         Scene scene = new Scene(root);
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);

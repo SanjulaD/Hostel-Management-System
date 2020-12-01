@@ -57,11 +57,11 @@ public class Student_MenuController implements Initializable {
 
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/New_Student.fxml"));
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root);        
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML

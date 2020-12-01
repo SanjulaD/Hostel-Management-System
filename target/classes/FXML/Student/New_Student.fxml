@@ -35,42 +35,42 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextField fx:id="reg_txt_username" layoutX="325.0" layoutY="261.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_username" layoutX="325.0" layoutY="261.0" prefHeight="40.0" prefWidth="300.0" promptText="Name" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_nsbmid" layoutX="325.0" layoutY="350.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_nsbmid" layoutX="325.0" layoutY="350.0" prefHeight="40.0" prefWidth="300.0" promptText="NSBM ID No" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_email" layoutX="326.0" layoutY="438.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_email" layoutX="326.0" layoutY="438.0" prefHeight="40.0" prefWidth="300.0" promptText="abc@gmail.com" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_phnmb" layoutX="326.0" layoutY="528.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_phnmb" layoutX="326.0" layoutY="528.0" prefHeight="40.0" prefWidth="300.0" promptText="Contact No" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_nic" layoutX="678.0" layoutY="261.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_nic" layoutX="678.0" layoutY="261.0" prefHeight="40.0" prefWidth="300.0" promptText="NIC No" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_address" alignment="TOP_LEFT" layoutX="678.0" layoutY="350.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_address" alignment="TOP_LEFT" layoutX="678.0" layoutY="350.0" prefHeight="40.0" prefWidth="300.0" promptText="Address" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_guardname" layoutX="678.0" layoutY="438.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_guardname" layoutX="678.0" layoutY="438.0" prefHeight="40.0" prefWidth="300.0" promptText="Name of the Guardian" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="reg_txt_guardtel" layoutX="678.0" layoutY="528.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 10px;">
+      <TextField fx:id="reg_txt_guardtel" layoutX="678.0" layoutY="528.0" prefHeight="40.0" prefWidth="300.0" promptText="Guardian Contact No" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
@@ -90,7 +90,7 @@
             <Font name="Segoe UI" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="325.0" layoutY="499.0" prefHeight="17.0" prefWidth="250.0" text="PHONE NUMBER" textFill="WHITE">
+      <Label layoutX="325.0" layoutY="499.0" prefHeight="17.0" prefWidth="250.0" text="CONTACT NUMBER" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
