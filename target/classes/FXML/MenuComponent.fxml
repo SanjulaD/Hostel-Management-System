@@ -30,7 +30,7 @@
             </BorderPane>
             <Button id="btn" fx:id="btn_student" alignment="CENTER" layoutX="150.0" layoutY="100.0" lineSpacing="5.0" mnemonicParsing="false" onMouseClicked="#student_btn_clicked" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Styles/menucomponent.css" text="MANAGE STUDENTS " textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI" size="30.0" />
+                  <Font name="Segoe UI Bold" size="30.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -38,7 +38,7 @@
             </Button>
             <Button id="btn" fx:id="btn_employee" alignment="CENTER" layoutX="510.0" layoutY="100.0" lineSpacing="5.0" mnemonicParsing="false" onMouseClicked="#employee_btn_clicked" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Styles/menucomponent.css" text="MANAGE EMPLOYEES " textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI" size="30.0" />
+                  <Font name="Segoe UI Bold" size="30.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />

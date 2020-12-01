@@ -42,12 +42,12 @@
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="reg_txt_nic" layoutX="92.0" layoutY="537.0" prefHeight="40.0" prefWidth="300.0" promptText="NIC No" style="-fx-background-radius: 10px;">
+            <TextField fx:id="reg_txt_nic" layoutX="76.0" layoutY="537.0" prefHeight="40.0" prefWidth="300.0" promptText="NIC No" style="-fx-background-radius: 10px;">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="reg_txt_id" layoutX="92.0" layoutY="153.0" prefHeight="40.0" prefWidth="300.0" promptText="ID" style="-fx-background-radius: 10px;">
+            <TextField fx:id="reg_txt_id" layoutX="76.0" layoutY="153.0" prefHeight="40.0" prefWidth="300.0" promptText="ID" style="-fx-background-radius: 10px;">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>
@@ -57,17 +57,17 @@
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="reg_txt_username" layoutX="92.0" layoutY="249.0" prefHeight="40.0" prefWidth="300.0" promptText="name" style="-fx-background-radius: 10px;">
+            <TextField fx:id="reg_txt_username" layoutX="76.0" layoutY="249.0" prefHeight="40.0" prefWidth="300.0" promptText="name" style="-fx-background-radius: 10px;">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="reg_txt_nsbmid" layoutX="92.0" layoutY="347.0" prefHeight="40.0" prefWidth="300.0" promptText="NSBM ID No" style="-fx-background-radius: 10px;">
+            <TextField fx:id="reg_txt_nsbmid" layoutX="76.0" layoutY="347.0" prefHeight="40.0" prefWidth="300.0" promptText="NSBM ID No" style="-fx-background-radius: 10px;">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="reg_txt_email" layoutX="92.0" layoutY="442.0" prefHeight="40.0" prefWidth="300.0" promptText="abc@gmail.com" style="-fx-background-radius: 10px;">
+            <TextField fx:id="reg_txt_email" layoutX="76.0" layoutY="442.0" prefHeight="40.0" prefWidth="300.0" promptText="abc@gmail.com" style="-fx-background-radius: 10px;">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>
@@ -77,12 +77,12 @@
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <Label layoutX="92.0" layoutY="119.0" prefHeight="40.0" prefWidth="300.0" text="ID" textFill="WHITE">
+            <Label layoutX="76.0" layoutY="119.0" prefHeight="40.0" prefWidth="300.0" text="ID" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="92.0" layoutY="505.0" prefHeight="40.0" prefWidth="300.0" text="NIC NO" textFill="WHITE">
+            <Label layoutX="76.0" layoutY="505.0" prefHeight="40.0" prefWidth="300.0" text="NIC NO" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -97,17 +97,17 @@
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="92.0" layoutY="215.0" prefHeight="40.0" prefWidth="300.0" text="NAME" textFill="WHITE">
+            <Label layoutX="76.0" layoutY="215.0" prefHeight="40.0" prefWidth="300.0" text="NAME" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="92.0" layoutY="314.0" prefHeight="40.0" prefWidth="300.0" text="NSBM ID NO" textFill="WHITE">
+            <Label layoutX="76.0" layoutY="314.0" prefHeight="40.0" prefWidth="300.0" text="NSBM ID NO" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="92.0" layoutY="409.0" prefHeight="40.0" prefWidth="300.0" text="EMAIL" textFill="WHITE">
+            <Label layoutX="76.0" layoutY="409.0" prefHeight="40.0" prefWidth="300.0" text="EMAIL" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -127,7 +127,7 @@
                   <Font name="Segoe UI Bold" size="24.0" />
                </font>
             </Label>
-            <Button id="btn" fx:id="btn_refersh" layoutX="256.0" layoutY="641.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #3626A7;" stylesheets="@../../Styles/MenuSec.css" text="REFRESH" textFill="WHITE">
+            <Button id="btn" fx:id="btn_refersh" layoutX="139.0" layoutY="689.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #3626A7;" stylesheets="@../../Styles/MenuSec.css" text="REFRESH" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -135,7 +135,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button id="btn" fx:id="btn_update_student" layoutX="53.0" layoutY="641.0" mnemonicParsing="false" onMouseClicked="#updateStudentButtonAction" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/MenuSec.css" text="UPDATE" textFill="WHITE">
+            <Button id="btn" fx:id="btn_update_student" layoutX="139.0" layoutY="622.0" mnemonicParsing="false" onMouseClicked="#updateStudentButtonAction" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/MenuSec.css" text="UPDATE" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
