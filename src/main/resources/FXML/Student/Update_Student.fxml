@@ -57,7 +57,7 @@
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="reg_txt_username" layoutX="76.0" layoutY="249.0" prefHeight="40.0" prefWidth="300.0" promptText="name" style="-fx-background-radius: 10px;">
+            <TextField fx:id="reg_txt_username" layoutX="76.0" layoutY="249.0" prefHeight="40.0" prefWidth="300.0" promptText="Name" style="-fx-background-radius: 10px;">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>

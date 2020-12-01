@@ -55,7 +55,7 @@
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <Button id="btn" fx:id="btn_reg_employee" layoutX="554.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#registerButtonAction" prefHeight="50.0" prefWidth="175.0" text="REGISTER" textFill="WHITE">
+      <Button id="btn" fx:id="btn_reg_employee" layoutX="554.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#registerButtonAction" prefHeight="50.0" prefWidth="175.0" stylesheets="@../../Styles/MenuSec.css" text="REGISTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>

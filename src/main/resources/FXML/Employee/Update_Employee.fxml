@@ -29,7 +29,7 @@
             </Text>
          </center>
       </BorderPane>
-      <Button id="signIn" fx:id="btn_update_employee" layoutX="58.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeButtonAction" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="UPDATE" textFill="WHITE">
+      <Button id="btn" fx:id="btn_update_employee" layoutX="58.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeButtonAction" prefHeight="50.0" prefWidth="175.0" styleClass="signIn" stylesheets="@../../Styles/MenuSec.css" text="UPDATE" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
@@ -37,7 +37,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button id="signIn" fx:id="btn_refersh" layoutX="276.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="REFRESH" textFill="WHITE">
+      <Button id="btn" fx:id="btn_refersh" layoutX="276.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="50.0" prefWidth="175.0" styleClass="signIn" stylesheets="@../../Styles/MenuSec.css" text="REFRESH" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
