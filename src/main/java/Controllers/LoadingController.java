@@ -28,6 +28,7 @@ import javafx.stage.StageStyle;
  * @author User
  */
 public class LoadingController implements Initializable {
+    double xoffset, yoffset;
     
     @FXML 
     AnchorPane ap;
@@ -53,7 +54,20 @@ public class LoadingController implements Initializable {
                     stage.setResizable(false);
                     stage.show();
                     ap.getScene().getWindow().hide();
-                    
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event){
+                            xoffset = event.getSceneX();
+                            yoffset = event.getSceneY();
+                        }
+                    });
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event){
+                            stage.setX(event.getScreenX() - xoffset);
+                            stage.setY(event.getScreenY() - yoffset);
+                        }
+                    });
                 });
             } catch (InterruptedException ex) {
                 Logger.getLogger(LoadingController.class.getName()).log(Level.SEVERE, null, ex);
