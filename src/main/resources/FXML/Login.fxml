@@ -5,14 +5,21 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" stylesheets="@../Styles/loginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
    <children>
+      <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/mainbg.jpg" />
+         </image>
+      </ImageView>
       <Pane prefHeight="540.0" prefWidth="960.0" styleClass="background" stylesheets="@../Styles/loginStyle.css">
          <children>
             <TextField fx:id="txt_pword" layoutX="41.0" layoutY="287.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;" stylesheets="@Styles/loginStyle.css">
@@ -62,8 +69,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Line endX="162.0" layoutX="142.0" layoutY="247.0" startX="-100.0" stroke="#00a3ff" strokeWidth="2.0" />
-            <Line endX="162.0" layoutX="142.0" layoutY="322.0" startX="-100.0" stroke="#00a3ff" strokeWidth="2.0" />
+            <Line endX="162.0" layoutX="142.0" layoutY="247.0" startX="-100.0" stroke="#0033ff" strokeWidth="2.0" />
+            <Line endX="162.0" layoutX="142.0" layoutY="322.0" startX="-100.0" stroke="#0033ff" strokeWidth="2.0" />
          </children>
       </Pane>
    </children>

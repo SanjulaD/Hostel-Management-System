@@ -3,13 +3,13 @@
  */
 
 #btn {
-    -fx-background-color: rgba(0, 0, 115, .5);
+    -fx-background-color: rgba(7, 0, 79, .7);
     -fx-border-color: #0069ff;
     -fx-background-radius: 20px;
     -fx-border-radius: 20px;
 }
 #btn:hover{
-    -fx-background-color: rgba(0, 0, 115, .8);
+    -fx-background-color: rgba(7, 0, 79, .9);
     -fx-border-color: #0091ff;
     -fx-background-radius: 30px;
     -fx-border-radius: 30px;

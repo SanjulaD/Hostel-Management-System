@@ -11,30 +11,30 @@
 
 <AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuComponentController">
    <children>
-      <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true">
          <image>
             <Image url="@../Images/secbg.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="150.0" layoutY="14.0">
+      <Pane prefHeight="540.0" prefWidth="960.0">
          <children>
-            <Button id="btn" fx:id="btn_student" alignment="CENTER" layoutY="86.0" lineSpacing="5.0" mnemonicParsing="false" onMouseClicked="#student_btn_clicked" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Styles/menucomponent.css" text="MANAGE STUDENTS " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="btn_student" alignment="CENTER" layoutX="150.0" layoutY="97.0" lineSpacing="5.0" mnemonicParsing="false" onMouseClicked="#student_btn_clicked" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Styles/menucomponent.css" text="MANAGE STUDENTS " textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Bold" size="27.0" />
+                  <Font name="Segoe UI" size="30.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button id="btn" fx:id="btn_employee" alignment="CENTER" layoutX="360.0" layoutY="86.0" lineSpacing="5.0" mnemonicParsing="false" onMouseClicked="#employee_btn_clicked" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Styles/menucomponent.css" text="MANAGE EMPLOYEES " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="btn_employee" alignment="CENTER" layoutX="510.0" layoutY="97.0" lineSpacing="5.0" mnemonicParsing="false" onMouseClicked="#employee_btn_clicked" prefHeight="400.0" prefWidth="300.0" stylesheets="@../Styles/menucomponent.css" text="MANAGE EMPLOYEES " textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Bold" size="27.0" />
+                  <Font name="Segoe UI" size="30.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button id="btn_back" fx:id="btn_back" layoutX="698.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="98.0" stylesheets="@../Styles/menucomponent.css" text="Log Out" textFill="WHITE">
+            <Button id="btn_back" fx:id="btn_back" layoutX="846.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" stylesheets="@../Styles/menucomponent.css" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Semibold" size="15.0" />
                </font>
@@ -42,7 +42,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label layoutX="199.0" layoutY="32.0" text="Select an Option Below" textFill="WHITE" wrapText="true">
+            <Label layoutX="349.0" layoutY="43.0" text="Select an Option Below" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Bold" size="24.0" />
                </font>

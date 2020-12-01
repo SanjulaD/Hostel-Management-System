@@ -10,8 +10,8 @@ and open the template in the editor.
 
 .signIn {
     -fx-background-radius: 20px !important;
-    -fx-background-color:  linear-gradient(to right top, #0055CF, #002265, #0055CF);
+    -fx-background-color:  linear-gradient(to right top, #000acf, #002265, #000acf);
 }
 .signIn:hover{
-    -fx-background-color: #004bb8;
+    -fx-background-color: #000acf;
 }
