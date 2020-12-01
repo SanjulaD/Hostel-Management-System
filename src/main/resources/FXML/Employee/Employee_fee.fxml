@@ -3,47 +3,87 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Employee_feeController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Employee_feeController">
    <children>
-      <Pane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #3626A7;">
-         <children>
-            <Button id="btn_back" fx:id="btn_back" layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF331F;" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+      <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/2188.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="35.0" prefWidth="1280.0" style="-fx-background-color: #212121;">
+         <center>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSTEL MANAGEMENT SYSTEM" BorderPane.alignment="CENTER">
                <font>
-                  <Font name="Segoe UI" size="17.0" />
+                  <Font name="Segoe UI Semibold" size="14.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children></Pane>
+            </Text>
+         </center>
+      </BorderPane>
+      <Label layoutX="542.0" layoutY="91.0" prefHeight="111.0" prefWidth="196.0" text="STAFF PAYMENT MANAGEMENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button id="btn_back" fx:id="btn_back" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" stylesheets="@../../Styles/MenuSec.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
      
-      <TextField fx:id="emplyeeID" layoutX="330.0" layoutY="91.0" prefHeight="35.0" prefWidth="211.0" promptText="Emplyee ID">
+      <TextField fx:id="emplyeeID" layoutX="490.0" layoutY="269.0" prefHeight="40.0" prefWidth="300.0" promptText="Emplyee ID" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
-      <TextField fx:id="employeeFee" layoutX="330.0" layoutY="160.0" prefHeight="35.0" prefWidth="211.0" promptText="Salary">
+      <TextField fx:id="employeeFee" layoutX="491.0" layoutY="359.0" prefHeight="40.0" prefWidth="300.0" promptText="Salary" style="-fx-background-radius: 10px;">
          <font>
             <Font name="Segoe UI" size="13.0" />
          </font>
       </TextField>
       
    
-      <Button id="signIn" fx:id="submit" layoutX="376.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#submitButtonAction" prefHeight="35.0" prefWidth="372.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="Submit" textFill="WHITE">
+      <Button id="btn" fx:id="submit" layoutX="553.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#submitButtonAction" prefHeight="50.0" prefWidth="175.0" stylesheets="@../../Styles/MenuSec.css" text="Submit" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font name="Segoe UI Bold" size="18.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ComboBox fx:id="month" layoutX="341.0" layoutY="224.0" prefWidth="150.0" promptText="Month" />
-      <ComboBox fx:id="year" layoutX="341.0" layoutY="277.0" prefWidth="150.0" promptText="Year" />
+      <ComboBox fx:id="month" layoutX="491.0" layoutY="441.0" prefHeight="40.0" prefWidth="300.0" promptText="Month" style="-fx-background-radius: 10px;" />
+      <ComboBox fx:id="year" layoutX="490.0" layoutY="530.0" prefHeight="40.0" prefWidth="300.0" promptText="Year" style="-fx-background-radius: 10px;" />
+      <Label layoutX="490.0" layoutY="231.0" prefHeight="50.0" prefWidth="300.0" text="EMPLOYEE ID NO" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="321.0" prefHeight="50.0" prefWidth="300.0" text="SALARY AMOUNT" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="402.0" prefHeight="50.0" prefWidth="300.0" text="SELECT THE MONTH" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="492.0" prefHeight="50.0" prefWidth="300.0" text="SELECT THE YEAR" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
       
 
      

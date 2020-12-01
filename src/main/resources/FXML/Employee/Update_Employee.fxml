@@ -6,92 +6,51 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Update_EmployeeController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Employee.Update_EmployeeController">
    <children>
-      <Pane layoutX="-15.0" layoutY="-15.0" prefHeight="523.0" prefWidth="322.0" style="-fx-background-color: #fbfbff;">
-         <children>
-            <Button id="signIn" fx:id="btn_update_employee" layoutX="69.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeButtonAction" prefHeight="35.0" prefWidth="198.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="UPDATE" textFill="WHITE">
+      <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/2188.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="35.0" prefWidth="1280.0" style="-fx-background-color: #212121;">
+         <center>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSTEL MANAGEMENT SYSTEM" BorderPane.alignment="CENTER">
                <font>
-                  <Font size="14.0" />
+                  <Font name="Segoe UI Semibold" size="14.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button id="signIn" fx:id="btn_refersh" layoutX="69.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="35.0" prefWidth="198.0" style="-fx-background-color: #3626A7;" styleClass="signIn" stylesheets="@../../Styles/loginStyle.css" text="REFRESH" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <TextField fx:id="emp_id" layoutX="71.0" layoutY="73.0" prefHeight="35.0" prefWidth="211.0" promptText="emp id">
-               <font>
-                  <Font name="Segoe UI" size="13.0" />
-               </font>
-            </TextField>
-            <Label layoutX="72.0" layoutY="48.0" prefHeight="17.0" prefWidth="75.0" text="EMPLOYEE ID" textFill="#0d0106">
-               <font>
-                  <Font name="Segoe UI" size="10.0" />
-               </font>
-            </Label>
-            <TextField fx:id="reg_txt_emp_emgtel" layoutX="67.0" layoutY="348.0" prefHeight="35.0" prefWidth="211.0" promptText="emergency tel">
-               <font>
-                  <Font name="Segoe UI" size="13.0" />
-               </font>
-            </TextField>
-            <Label layoutX="68.0" layoutY="326.0" prefHeight="17.0" prefWidth="100.0" text="EMERGENCY TEL" textFill="#0d0106">
-               <font>
-                  <Font name="Segoe UI" size="10.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <TextField fx:id="reg_txt_emp_username" layoutX="55.0" layoutY="123.0" prefHeight="35.0" prefWidth="211.0" promptText="name">
+            </Text>
+         </center>
+      </BorderPane>
+      <Button id="btn" fx:id="btn_update_employee" layoutX="58.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#updateEmployeeButtonAction" prefHeight="50.0" prefWidth="175.0" styleClass="signIn" stylesheets="@../../Styles/MenuSec.css" text="UPDATE" textFill="WHITE">
          <font>
-            <Font name="Segoe UI" size="13.0" />
+            <Font name="Segoe UI Bold" size="18.0" />
          </font>
-      </TextField>
-      <TextField fx:id="reg_txt_emp_nic" layoutX="54.0" layoutY="192.0" prefHeight="35.0" prefWidth="211.0" promptText="nic">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btn" fx:id="btn_refersh" layoutX="276.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#refreshButtionClickAction" prefHeight="50.0" prefWidth="175.0" styleClass="signIn" stylesheets="@../../Styles/MenuSec.css" text="REFRESH" textFill="WHITE">
          <font>
-            <Font name="Segoe UI" size="13.0" />
+            <Font name="Segoe UI Bold" size="18.0" />
          </font>
-      </TextField>
-      <TextField fx:id="reg_txt_emp_phnmb" layoutX="54.0" layoutY="261.0" prefHeight="35.0" prefWidth="211.0" promptText="phone number">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="952.0" layoutY="52.0" prefHeight="65.0" prefWidth="250.0" text="STAFF UPDATE FORM" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
          <font>
-            <Font name="Segoe UI" size="13.0" />
-         </font>
-      </TextField>
-      <Label layoutX="55.0" layoutY="100.0" prefHeight="17.0" prefWidth="39.0" text="NAME" textFill="#0d0106">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
+            <Font name="Segoe UI Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="54.0" layoutY="170.0" prefHeight="17.0" prefWidth="100.0" text="NIC" textFill="#0d0106">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
-         </font>
-      </Label>
-      <Label layoutX="54.0" layoutY="240.0" prefHeight="17.0" prefWidth="100.0" text="PHONE NUMBER" textFill="#0d0106">
-         <font>
-            <Font name="Segoe UI" size="10.0" />
-         </font>
-      </Label>
-      <TableView fx:id="tableEmployee" editable="true" layoutX="307.0" layoutY="45.0" onMouseClicked="#displaySelectedAction" prefHeight="391.0" prefWidth="538.0">
-         <columns>
-            <TableColumn fx:id="col_id" prefWidth="74.0" text="EMP ID" />
-            <TableColumn fx:id="col_name" prefWidth="107.0" text="NAME" />
-            <TableColumn fx:id="col_nic" prefWidth="106.0" text="NIC" />
-            <TableColumn fx:id="col_phonenumber" prefWidth="122.0" text="PHONE NUMBER" />
-            <TableColumn fx:id="col_emgtel" prefWidth="127.0" text="EMG TEL" />
-         </columns>
-      </TableView>
-      <Button id="btn_back" fx:id="btn_back" layoutX="871.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #FF331F;" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
+      <Button id="btn_back" fx:id="btn_back" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="100.0" stylesheets="@../../Styles/menucomponent.css" text="BACK" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="15.0" />
          </font>
@@ -99,6 +58,65 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <TextField fx:id="emp_id" layoutX="102.0" layoutY="180.0" prefHeight="40.0" prefWidth="300.0" promptText="Employee ID" style="-fx-background-radius: 10px;">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_emp_emgtel" layoutX="102.0" layoutY="544.0" prefHeight="40.0" prefWidth="300.0" promptText="Emergency Tel No" style="-fx-background-radius: 10px;">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_emp_username" layoutX="102.0" layoutY="266.0" prefHeight="40.0" prefWidth="300.0" promptText="Name" style="-fx-background-radius: 10px;">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_emp_nic" layoutX="102.0" layoutY="359.0" prefHeight="40.0" prefWidth="300.0" promptText="NIC No" style="-fx-background-radius: 10px;">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reg_txt_emp_phnmb" layoutX="102.0" layoutY="453.0" prefHeight="40.0" prefWidth="300.0" promptText="Phone No" style="-fx-background-radius: 10px;">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="102.0" layoutY="504.0" prefHeight="40.0" prefWidth="300.0" text="EMERGENCY TEL NO" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="140.0" prefHeight="40.0" prefWidth="300.0" text="EMPLOYEE ID" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="226.0" prefHeight="40.0" prefWidth="300.0" text="NAME" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="319.0" prefHeight="40.0" prefWidth="300.0" text="NIC NO" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="413.0" prefHeight="40.0" prefWidth="300.0" text="PHONE NUMBER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableEmployee" editable="true" layoutX="502.0" layoutY="140.0" onMouseClicked="#displaySelectedAction" prefHeight="570.0" prefWidth="700.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="104.0" text="EMP ID" />
+            <TableColumn fx:id="col_name" prefWidth="101.0" text="NAME" />
+            <TableColumn fx:id="col_nic" prefWidth="129.0" text="NIC" />
+            <TableColumn fx:id="col_phonenumber" prefWidth="165.0" text="PHONE NUMBER" />
+            <TableColumn fx:id="col_emgtel" prefWidth="156.0" text="EMG TEL" />
+         </columns>
+      </TableView>
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />

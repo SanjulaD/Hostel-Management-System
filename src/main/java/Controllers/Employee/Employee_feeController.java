@@ -32,6 +32,7 @@ import DBConnection.DBHandler;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.stage.StageStyle;
 
 public class Employee_feeController implements Initializable {
 
@@ -77,6 +78,7 @@ public class Employee_feeController implements Initializable {
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Employee/Employee_Menu.fxml"));
         Scene scene = new Scene(root);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);

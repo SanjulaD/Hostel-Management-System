@@ -57,11 +57,11 @@ public class Student_MenuController implements Initializable {
 
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/New_Student.fxml"));
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root);        
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
@@ -71,10 +71,10 @@ public class Student_MenuController implements Initializable {
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Update_Student.fxml"));
         Scene scene = new Scene(root);
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
@@ -83,11 +83,11 @@ public class Student_MenuController implements Initializable {
 
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Delete_Student.fxml"));
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root);        
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
     @FXML
     private void studentFeeAction(MouseEvent event) throws IOException {
@@ -96,10 +96,10 @@ public class Student_MenuController implements Initializable {
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/Student_fee.fxml"));
         Scene scene = new Scene(root);
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
     @FXML
     private void allStudentAction(MouseEvent event) throws IOException {
@@ -108,10 +108,10 @@ public class Student_MenuController implements Initializable {
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/All_Student_Living.fxml"));
         Scene scene = new Scene(root);
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
@@ -121,10 +121,10 @@ public class Student_MenuController implements Initializable {
         Stage login = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Student/All_Student_Leaved.fxml"));
         Scene scene = new Scene(root);
+        login.initStyle(StageStyle.TRANSPARENT);
         login.setScene(scene);
         login.show();
         login.setResizable(false);
-        login.initStyle(StageStyle.TRANSPARENT);
     }
 
     @FXML
