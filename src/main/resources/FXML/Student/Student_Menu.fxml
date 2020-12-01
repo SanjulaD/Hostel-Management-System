@@ -3,17 +3,33 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Student.Student_MenuController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/4345.jpg" />
+         </image>
+      </ImageView>
       <Pane prefHeight="800.0" prefWidth="1280.0">
          <children>
-            <Button id="btn" fx:id="deleteStudent" layoutX="880.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#deleteStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+             <BorderPane prefHeight="35.0" prefWidth="1280.0" style="-fx-background-color: #212121;">
+               <center>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSTEL MANAGEMENT SYSTEM" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Text>
+               </center>
+            </BorderPane>
+            <Button id="btn" fx:id="deleteStudent" layoutX="490.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#deleteStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="VIEW THE LEFT-OUT STUDENTS DETAILS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -24,7 +40,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="addNewStudent" layoutX="100.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#addNewStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="NEW STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="addNewStudent" layoutX="100.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#addNewStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ADD A NEW STUDENT RECORD" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -35,7 +51,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="updateStudent" layoutX="490.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#updateStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE STUDENT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="updateStudent" layoutX="490.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#updateStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="UPDATE A STUDENT RECORD" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -46,7 +62,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="studentFees" layoutX="490.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#studentFeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="STUDENT FEES" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="studentFees" layoutX="880.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#studentFeeAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="MANAGE STUDENT PAYMENTS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -57,7 +73,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="allStudentLiving" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#allStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL STUDENT LIVING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="allStudentLiving" layoutX="100.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#allStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="VIEW THE LIVE-IN STUDENT DETAILS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -68,7 +84,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn" fx:id="leavedStudent" layoutX="880.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#leavedStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="ALL STUDENT LEAVED " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button id="btn" fx:id="leavedStudent" layoutX="880.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#leavedStudentAction" prefHeight="270.0" prefWidth="300.0" stylesheets="@../../Styles/MenuSec.css" text="DELETE A STUDENT RECORD" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>
@@ -79,7 +95,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </Button>
-            <Button id="btn_back" fx:id="btn_back" layoutX="1180.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="80.0" stylesheets="@../../Styles/MenuSec.css" text="MENU" textFill="WHITE">
+            <Button id="btn_back" fx:id="btn_back" layoutX="20.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="80.0" stylesheets="@../../Styles/MenuSec.css" text="MENU" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="17.0" />
                </font>
@@ -91,6 +107,6 @@
       </Pane>
    </children>
    <cursor>
-      <Cursor fx:constant="OPEN_HAND" />
+      <Cursor fx:constant="DEFAULT" />
    </cursor>
 </AnchorPane>
