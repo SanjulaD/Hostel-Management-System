@@ -33,6 +33,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javax.swing.JOptionPane;
 
 /**
@@ -165,6 +166,7 @@ public class Update_EmployeeController implements Initializable {
         Stage stu_Menu = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/Employee/Employee_Menu.fxml"));
         Scene scene = new Scene(root);
+        stu_Menu.initStyle(StageStyle.TRANSPARENT);
         stu_Menu.setScene(scene);
         stu_Menu.show();
         stu_Menu.setResizable(false);

@@ -121,7 +121,7 @@
             <Font name="Segoe UI Bold" size="24.0" />
          </font>
       </Label>
-      <Button id="btn" fx:id="btn_reg_student" layoutX="563.0" layoutY="615.0" mnemonicParsing="false" onMouseClicked="#registerButtonAction" prefHeight="50.0" prefWidth="175.0" stylesheets="@../../Styles/MenuSec.css" text="REGISTER" textFill="WHITE">
+      <Button id="btn" fx:id="btn_reg_student" layoutX="563.0" layoutY="642.0" mnemonicParsing="false" onMouseClicked="#registerButtonAction" prefHeight="50.0" prefWidth="175.0" stylesheets="@../../Styles/MenuSec.css" text="REGISTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
