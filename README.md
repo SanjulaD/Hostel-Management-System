@@ -23,6 +23,10 @@ Modules as described there are mainly two types of categories, the first one is 
 - Search through complete database
 - Scan StudentID using camera and get registration.
 
+![Login](https://user-images.githubusercontent.com/49508237/100832885-c03aa000-348e-11eb-822d-46735d58e6a7.jpeg)
+
+![Update](https://user-images.githubusercontent.com/49508237/100832889-c29cfa00-348e-11eb-9240-e6eb5c19df6e.jpeg)
+
 ### Installation
 
 System requires [Netbeans](https://netbeans.apache.org/download/nb120/nb120.html) v12 to run.
