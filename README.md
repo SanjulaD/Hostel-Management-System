@@ -35,4 +35,3 @@ Install the [Maven](https://maven.apache.org/) and devDependencies and start the
 License
 ----
 MIT
-
